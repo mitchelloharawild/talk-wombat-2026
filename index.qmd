@@ -245,3 +245,29 @@ Co-Founder of TimeCopilot and AO Labs, working across agentic AI and machine lea
 Co-Founder of TimeCopilot, co-creator of TimeGPT and former CTO of Nixtla.
 :::
 ::::
+
+# Closing discussion {kicker="4:30 pm"}
+
+Krisanat Anukarnsakulchularp
+
+## Summary of the day
+
+<!-- TODO: highlights from the sessions -->
+
+*To come*
+
+## Events and organisations
+
+<!-- TODO: other events and organisations in the local data analysis space -->
+
+*To come*
+
+## Thanks
+
+<!-- TODO: speakers, volunteers, organisers and sponsors -->
+
+*To come*
+
+# Thank you
+
+[wombat.numbat.space](https://wombat.numbat.space)
