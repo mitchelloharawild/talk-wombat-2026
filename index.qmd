@@ -28,9 +28,11 @@ We pay our respects to Elders past and present, and welcome all Aboriginal and T
 Workshop Organised by the\
 Monash Business Analytics Team
 
+::: {.incremental}
 * Open source tools for data analysis
 * Academia, industry and government together
 * Learn, discuss, meet someone new
+:::
 
 :::
 :::
@@ -102,15 +104,18 @@ Volunteer lead
 * Assemble at the park to the west
 :::
 
+::: {.fragment .fade-up}
 ::: {.callout-tip}
 ## Getting help
 Ask an organiser, or email\
 <buseco-ebs.wombat@monash.edu>
 :::
+:::
 
 :::
 ::: {.column width="50%"}
 
+::: {.fragment .fade-up}
 ::: {.callout-note}
 ## Code of conduct
 Be kind, respectful and considerate. Full version on the website.
@@ -122,6 +127,7 @@ Response team:
 * Michael Lydeamore
 * Mitchell O'Hara-Wild
 * Krisanat Anukarnsakulchularp
+:::
 :::
 
 :::
@@ -138,26 +144,32 @@ Response team:
 * Photos are taken throughout the day
 * Post yours with `#WOMBAT2026`
 
+::: {.fragment .fade-up fragment-index=1}
 ![](img/badge-stickers.svg){.badge-illus fig-alt="Name badge with a space for a pronoun sticker at bottom left and for coloured dots at bottom right"}
+:::
 
 :::
 ::: {.column width="53%"}
+
+::: {.fragment .fade-up fragment-index=1}
 
 ### Badge stickers
 
 Optional, from the registration desk
 
-::: {.sticker .red}
+:::
+
+::: {.sticker .red .fragment .fade-up fragment-index=2}
 **No photos, please**\
 Please don't take or share photos of me.
 :::
 
-::: {.sticker .green}
+::: {.sticker .green .fragment .fade-up fragment-index=3}
 **Looking for work**\
 Open to job opportunities. Come say hello.
 :::
 
-::: {.sticker .blue}
+::: {.sticker .blue .fragment .fade-up fragment-index=4}
 **Hiring**\
 My team is hiring. Ask me about it.
 :::
@@ -177,27 +189,33 @@ Program, speakers and abstracts
 [wombat.numbat.space](https://wombat.numbat.space)
 :::
 
+::: {.fragment .fade-up}
 ::: {.callout-important}
 ## Live program
 What's on now and next, all day
 
 [wombat.numbat.space/live](https://wombat.numbat.space/live.html)
 :::
+:::
 
 :::
 ::: {.column width="50%"}
 
+::: {.fragment .fade-up}
 ::: {.callout-note}
 ## Wi-Fi
 * `eduroam` for students and academics
 * `Monash Guest Wi-Fi` for everyone else
 :::
+:::
 
 <!-- TODO: social event time and venue -->
 
+::: {.fragment .fade-up}
 ::: {.callout-tip}
 ## Social event
 After the closing discussion, all welcome
+:::
 :::
 
 :::
