@@ -22,7 +22,7 @@ Slides are 1600 x 900 and the fonts are bundled, so the deck works offline. For 
 | Images | `![](x.jpg){.image-right .nostretch}`, `.image-left`, or `## Title {.image-full background-image="x.jpg"}` |
 | Hide the footer / hexagons | `{.no-footer}` / `{.plain}` |
 
-`until` counts down to that time on the presenting computer's clock, so check its time zone. `minutes` starts when the slide is first shown.
+`until` counts down to that time on the presenting computer's clock, so check its time zone. `minutes` starts when the slide is first shown. The return time is shown under the countdown: double-click it to change it, then press Enter (Escape cancels). Changes to `until` breaks are kept for the day in that browser.
 
 Talk introductions take one or more presenters:
 

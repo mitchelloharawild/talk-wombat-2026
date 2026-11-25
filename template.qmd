@@ -142,8 +142,6 @@ PhD candidate at Monash University. Develops open source forecasting tools inclu
 
 ## Lunch {.break until="13:00"}
 
-Back at 1:00 pm
-
 ## Short break {.break minutes=10}
 
 # Thank you

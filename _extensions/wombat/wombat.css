@@ -166,6 +166,10 @@
 .reveal .slides section.break > .countdown { font-family: var(--display); font-weight: 700; font-size: 210px; line-height: 1.08; letter-spacing: -.02em; font-variant-numeric: lining-nums tabular-nums; }
 .reveal .slides section.break > .countdown.done { font-size: 120px; line-height: 1.6; }
 .reveal .slides section.break > p { font-size: 38px; margin: 6px 0 0; color: var(--grey); }
+.reveal .slides section.break > .break-back { font-size: 52px; }
+.reveal .break-back[hidden], .reveal .break-time[hidden] { display: none !important; }
+.reveal .break-time { font-weight: 700; cursor: pointer; user-select: none; font-variant-numeric: lining-nums tabular-nums; }
+.reveal .break-input { font: inherit; font-weight: 700; color: inherit; background: #fff; border: 2px solid currentColor; border-radius: 10px; padding: 0 14px; }
 
 /* ---------- components ---------- */
 .reveal pre, .reveal div.sourceCode { border-radius: 10px; }

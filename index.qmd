@@ -52,8 +52,6 @@ Distinguished Professor of Statistics at Monash University. Author of over 230 p
 
 ## Morning tea {.break until="10:30"}
 
-Back at 10:30 am
-
 # Time series analysis {kicker="10:30 am"}
 
 ## mixtime: Temporal data for better analytics {.talk .night kicker="Talk · 10:30 am"}
@@ -99,8 +97,6 @@ Senior Lecturer at Monash University. Researches hierarchical forecasting, recon
 ::::
 
 ## Lunch {.break until="13:00"}
-
-Back at 1:00 pm
 
 # Showcase {kicker="1:00 pm"}
 
@@ -177,8 +173,6 @@ Host. Postdoctoral Research Fellow, LMU Munich, studying LLMs for data preparati
 ::::
 
 ## Afternoon tea {.break until="15:00"}
-
-Back at 3:00 pm
 
 # AI and LLMs {kicker="3:00 pm"}
 
