@@ -312,46 +312,6 @@ Keynote: Nicola Rennie
 ![](img/opening/2025-4679.jpg){.nostretch alt="Social time"}
 :::
 
-## Then and now {.night}
-
-:::::: {.pairs}
-::::: {.pair}
-::: {.presenter}
-![](img/opening/2016-hadley.jpg){.nostretch alt="Hadley Wickham in 2016"}
-
-### 2016
-
-Hadley Wickham, keynote
-:::
-
-::: {.presenter}
-![](img/speakers/hadley-wickham.jpg){style="object-position: 30% 30%" .nostretch alt="Hadley Wickham"}
-
-### 2026
-
-In conversation, 1:30 pm
-:::
-:::::
-
-::::: {.pair}
-::: {.presenter}
-![](img/opening/2016-rob.jpg){.nostretch alt="Rob Hyndman on the 2016 website"}
-
-### 2016
-
-Rob Hyndman, "Making forecasting easier"
-:::
-
-::: {.presenter}
-![](img/speakers/rob-hyndman.jpg){.nostretch alt="Rob Hyndman"}
-
-### 2026
-
-Keynote, up next
-:::
-:::::
-::::::
-
 ## Today's program {.program-day}
 
 | | |

@@ -38,12 +38,6 @@
 .reveal .wall > p { display: grid; grid-template-columns: repeat(3, 1fr); gap: 14px; margin: 0; }
 .reveal .slides .wall img { width: 100%; height: 360px; max-width: none; max-height: none; margin: 0; object-fit: cover; border-radius: 8px; }
 
-/* then and now */
-.reveal .pairs { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; }
-.reveal .pair { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
-.reveal .slides .pair .presenter > p:has(img) { width: 280px; }
-.reveal .slides .pair .presenter h3 { font-size: 48px; margin: 18px 0 4px; color: var(--orange); }
-
 .reveal .slides section.program-day table { font-size: 31px; }
 .reveal .slides section.program-day table td { padding: 9px 18px 9px 0; }
 .reveal .slides section.program-day table td:first-child { width: 210px; font-family: var(--display); font-weight: 700; }

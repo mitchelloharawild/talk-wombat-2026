@@ -11,7 +11,7 @@ The line through the day: two 2016 speakers are back.
 * **Hadley Wickham**: 2016 keynote → 2019 keynote → 2026 conversation (and Monday's tutorial)
 * **Rob Hyndman**: 2016 talk "Making forecasting easier" and session chair → 2026 keynote
 
-So the memory lane ends on Rob and Hadley, then hands over to the keynote.
+Left implicit: the slides do not call this out.
 
 ## Proposed structure
 
@@ -33,11 +33,10 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 11 | A workshop at the zoo | programme quirks and annotated map (below) | `ZooMapAnnotated.jpg` `image-right` | 1 |
 | 12 | Seven WOMBATs | year, theme, venue; one site per advance | website screenshots (below) | 2 |
 | 13 | Along the way | photos from each year | photo wall, **needs your photos** | 1.5 |
-| 14 | Then and now | Hadley and Rob, 2016 → 2026 | portrait pairs, hexagon crop | 1 |
-| 15 | Today | the program | existing `## Today's program` | 1 |
+| 14 | Today | the program | existing `## Today's program` | 1 |
 | → | Keynote | existing session slide | | |
 
-About 14 min in total. If short on time, cut 13 first, then merge 3 into the closing thanks (2025 showed the committee up front).
+About 13 min in total. If short on time, cut 13 first, then merge 3 into the closing thanks (2025 showed the committee up front).
 
 ### Alternatives considered
 
@@ -100,10 +99,8 @@ From the 2016 site (`~/github/WOMBAT2016`):
 | `0985-crowd-side-ceiling` | Crowd side-on | spare |
 | `2309-crowd-front-close` | Crowd, individuals prominent | spare |
 | `2466-question-standing` | Standing attendee with microphone | spare |
-| `1171-hadley-pointing` | Hadley pointing at purrr code | 14 or 9 spare |
+| `1171-hadley-pointing` | Hadley pointing at purrr code | 9 spare |
 | `1918-laptop`, `2205-note-taking` | Details, no faces | texture tiles |
-
-Also in the 2016 folder: `hadley.png` (clean portrait frame) and `thumbnail.png` (cut-out on the title slide), both good for 14.
 
 The stills show identifiable attendees. The recording is already public; prefer wide shots over single faces.
 
@@ -141,7 +138,7 @@ Changed for 2026:
 * Evacuation procedure: same as 2025
 * Recorded: yes. Social event: yes, **venue and time still to add** (TODO in `index.qmd`)
 * No mention of celebrating Rob's career; no other opening speakers planned
-* Then-and-now photos are fine
+* No then-and-now slide: avoid drawing that much attention to it
 * Slides 9 and 10 use stills `2250` and `2403` full-bleed; no 2016 photo wall
 * Live program: website embedded in a slide
 * Slide 13: 2025 photo wall built; other years to come, one `.photo-slide` after each year
