@@ -1,0 +1,151 @@
+---
+title: "mixtime: Temporal data for better analytics"
+kicker: Talk · Tue 1 Dec · 10:30 am
+author:
+  - name: Mitchell O'Hara-Wild
+    affiliations: Monash University
+date: 2026-12-01
+photo: img/speakers/mitchell-ohara-wild.jpg # optional hexagon portrait
+# title-style: light                        # white hexagons instead of navy
+format: wombat-revealjs
+---
+
+# Why time is hard {kicker="Part one"}
+
+Section divider
+
+# Calendars {.light kicker="Part two"}
+
+Section divider on white
+
+## Regular slide
+
+* Phrases over sentences
+* One idea per slide
+* Links look [like this](https://wombat.numbat.space), code like `library(mixtime)`
+
+## Two columns {kicker="Label above the heading"}
+
+::: columns
+::: {.column width="50%"}
+
+### Morning
+
+* Surviving survival analysis
+* A gentle introduction to targets
+
+:::
+::: {.column width="50%"}
+
+### Afternoon
+
+* Exploratory time series analysis
+* Publishing your software
+
+:::
+:::
+
+## Regular slide on navy {.night}
+
+* Add `.night` to any slide
+* Same Markdown
+
+## Code
+
+```r
+library(fpp3)
+
+aus_production |>
+  filter(year(Quarter) >= 1992) |>
+  model(ets = ETS(Beer)) |>
+  forecast(h = "3 years") |>
+  autoplot(aus_production)
+```
+
+## Tables
+
+| Room | 9:00 am                          | 1:30 pm                          |
+|------|----------------------------------|----------------------------------|
+| 8.42 | Surviving survival analysis      | Exploratory time series analysis |
+| 8.43 | A gentle introduction to targets | Modern reproducibility practices |
+| 8.44 | Getting started with C++         | Modern package development       |
+| 8.53 | Introduction to Quarto           | Publishing your software         |
+
+## Callouts
+
+::: {.callout-note}
+## Note
+Background the audience may want.
+:::
+
+::: {.callout-tip}
+## Tip
+A practical shortcut.
+:::
+
+## Three ideas
+
+::: {.hexes}
+* **Timely** \
+  Data that knows its calendar
+* **Open** \
+  Tools anyone can inspect
+* **Modern** \
+  Built for the next analysis
+:::
+
+## Image right
+
+::: columns
+::: {.column width="60%"}
+
+* Content stays in a 60% column
+* Image cropped to a hexagon edge
+
+:::
+:::
+
+![](img/workshop.jpg){.image-right .nostretch}
+
+## Image left
+
+::: columns
+::: {.column width="40%"}
+:::
+::: {.column width="60%"}
+
+* Empty 40% column first
+* Then the content
+
+:::
+:::
+
+![](img/workshop.jpg){.image-left .nostretch}
+
+## Full image {.image-full background-image="img/workshop.jpg"}
+
+Full-bleed photo with a navy fade
+
+## mixtime: Temporal data for better analytics {.talk .night kicker="Talk · 10:30 am"}
+
+Most time classes handle a single granularity, forcing analysts to misrepresent their data. mixtime connects granularities through calendar algebra, so mixed-frequency data keeps its meaning through analysis and into ggtime graphics.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/mitchell-ohara-wild.jpg){.nostretch alt="Mitchell O'Hara-Wild"}
+
+### Mitchell O'Hara-Wild
+
+PhD candidate at Monash University. Develops open source forecasting tools including fable, distributional and mixtime.
+:::
+::::
+
+## Lunch {.break until="13:00"}
+
+Back at 1:00 pm
+
+## Short break {.break minutes=10}
+
+# Thank you
+
+[wombat.numbat.space](https://wombat.numbat.space)
