@@ -8,6 +8,34 @@ format:
     embed-resources: true
 ---
 
+## Acknowledgement of Country {.night}
+
+<!-- TODO: add acknowledgement -->
+
+*To come*
+
+## Welcome
+
+<!-- TODO: about WOMBAT and the organising committee -->
+
+*To come*
+
+## Today's program
+
+<!-- TODO: overview of the day -->
+
+* Keynote
+* Time series analysis
+* Showcase and conversation
+* AI and LLMs
+* Closing discussion
+
+## Safety and housekeeping
+
+<!-- TODO: emergency exits, amenities, Wi-Fi, badge stickers, code of conduct -->
+
+*To come*
+
 ## Spotting the weird ones {.talk .night kicker="Keynote · 9:00 am"}
 
 Anomaly detection often rests on ad hoc rules and hidden assumptions. Rob takes a principled statistical approach instead, using the {weird} package to find over-priced wines, errors in Old Faithful records and forgotten epidemics in 19th century France.
