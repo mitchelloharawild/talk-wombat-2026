@@ -1,13 +1,11 @@
 <script>
 // Session slides: "# Name {.session kicker="9:00 am"}" shows every session in the deck, with this one
-// enlarged. Speakers are read from the presenters of the talks that follow.
+// enlarged.
 (() => {
   const el = (tag, cls, text) => { const e = document.createElement(tag); if (cls) e.className = cls; if (text) e.textContent = text; return e; };
   const sessions = [...document.querySelectorAll(".reveal .slides section.session")].map(slide => {
-    const h1 = slide.querySelector("h1"), people = [];
-    for (let s = slide.nextElementSibling || (slide.parentNode.matches("section") ? null : slide.parentNode.nextElementSibling); s && !s.matches(".title-slide"); s = s.nextElementSibling)
-      s.querySelectorAll(".presenter h3").forEach(h => people.push(h.textContent.trim()));
-    return { slide, h1, name: h1.textContent, time: slide.dataset.kicker || "", people };
+    const h1 = slide.querySelector("h1");
+    return { slide, h1, name: h1.textContent, time: slide.dataset.kicker || "" };
   });
   sessions.forEach((now, i) => {
     const list = el("ol", "program");
@@ -18,11 +16,6 @@
       if (j === i) {
         li.setAttribute("aria-current", "step");
         what.append(el("span", "tag-next", "Up next"), now.h1);
-        if (s.people.length) {
-          const p = el("p", "people");
-          s.people.forEach(n => p.append(el("span", "", n), " "));
-          what.append(p);
-        }
       } else what.append(el("span", "name", s.name));
       li.append(what); list.append(li);
     });
