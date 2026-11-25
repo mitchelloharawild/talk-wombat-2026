@@ -325,7 +325,7 @@ Monash University, Melbourne CBD
 
 Keynote: Rob Hyndman
 
-## {#theme .theme-hero .plain .no-footer background-color="#222b76"}
+## {#theme .theme-hero .night .no-footer}
 
 ::: {.acrostic}
 * [T]{.initial}imely
