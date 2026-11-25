@@ -165,12 +165,12 @@ Chief Scientist at Posit, 2019 COPSS award winner and creator of the tidyverse.
 Associate Professor at Monash, working on anytime-valid inference.
 :::
 
-::: {.presenter}
+::: {.presenter .host}
 ![](img/speakers/cynthia-huang.jpg){.nostretch alt="Cynthia Huang"}
 
 ### Cynthia Huang
 
-Host. Postdoctoral Research Fellow, LMU Munich, studying LLMs for data preparation.
+Postdoctoral Research Fellow, LMU Munich, studying LLMs for data preparation.
 :::
 ::::
 

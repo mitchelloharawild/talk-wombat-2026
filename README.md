@@ -42,3 +42,5 @@ Bio, around 15 words.
 :::
 ::::
 ```
+
+With several presenters, `::: {.presenter .host}` adds a Host badge under the photo.
