@@ -14,6 +14,7 @@ Slides are 1600 x 900 and the fonts are bundled, so the deck works offline. For 
 |---|---|
 | Title | navy by default, `title-style: light` for white; optional `kicker` and `photo` |
 | Section divider | `# Title`, or `# Title {.light}` |
+| Session | `# Showcase {.session kicker="1:00 pm"}`; lists every session in the deck, with this one as up next and the presenters of its talks |
 | Regular slide | `## Title`; add `.night` for navy |
 | Label above a heading | `## Title {kicker="Text"}` |
 | Talk introduction | `## Title {.talk .night kicker="Talk · 10:30 am"}`, see below |

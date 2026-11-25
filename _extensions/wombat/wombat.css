@@ -112,6 +112,33 @@
 .reveal .slides section.title-slide:not(.wombat-title) h1 { font-size: 120px; line-height: 1; margin: 0; max-width: 1250px; text-wrap: balance; }
 .reveal .slides section.title-slide p { font-size: 40px; margin: 24px 0 0; }
 .reveal section.title-slide.night p, .reveal section.title-slide:not(.light) p { color: var(--lavender); }
+
+/* ---------- sessions: # Name {.session kicker="9:00 am"}, the running program built by sessions.html ---------- */
+.reveal .slides section.slide.session.title-slide:not([style*="display: none"]) { padding: 84px var(--px) 110px; justify-content: flex-start; }
+.reveal .slides section.slide.session.session.title-slide[data-kicker]::before { display: none; }
+.reveal .slides section.session .program-title { display: flex; align-items: center; gap: 28px; font-family: var(--display); font-weight: 700; font-size: 38px; line-height: 1; color: #fff !important; margin: 0 0 34px; }
+.reveal .program-title::after { content: ""; flex: 1; height: 3px; background: rgba(195,201,242,.35); }
+.reveal .slides ol.program { list-style: none; margin: 0; padding: 0; }
+.reveal .slides ol.program > li { position: relative; display: grid; grid-template-columns: 84px 220px minmax(0, 1fr); column-gap: 28px; align-items: center; margin: 0; padding: 15px 0; font-family: var(--display); font-weight: 600; font-size: 48px; line-height: 1.2; color: #b3bbf3; }
+.reveal .program > li.past { color: #8f9ae6; }
+.reveal .program .time { font-size: 40px; white-space: nowrap; font-variant-numeric: lining-nums tabular-nums; }
+/* timeline: hexagon marks joined by a line */
+.reveal .program > li::before, .reveal .program > li::after { content: ""; position: absolute; left: 39.5px; width: 5px; background: #5c69cc; }
+.reveal .program > li::before { top: 0; bottom: 50%; } .reveal .program > li::after { top: 50%; bottom: 0; }
+.reveal .program > li:first-child::before, .reveal .program > li:last-child::after { display: none; }
+.reveal .program > li:is(.past)::before, .reveal .program > li.past::after, .reveal .program > li.now::before { background: var(--orange); }
+.reveal .program .mark { position: relative; z-index: 1; justify-self: center; width: 42px; aspect-ratio: .866; background: #8f9ae6; clip-path: var(--hexclip); }
+.reveal .program .mark::before { content: ""; position: absolute; inset: 5px; background: #222b76; clip-path: var(--hexclip); }
+.reveal .program .past .mark { background: var(--orange); }
+.reveal .program .past .mark::before { inset: 0; background: #222b76; clip-path: polygon(22% 50%, 32% 41%, 44% 52%, 69% 30%, 78% 40%, 44% 69%); }
+.reveal .program .now .mark { width: 84px; background: var(--orange); }
+.reveal .program .now .mark::before { inset: 0; background: #222b76; clip-path: polygon(39% 32%, 70% 50%, 39% 68%); }
+.reveal .slides ol.program > li.now { padding: 30px 0; color: #fff; }
+.reveal .program .now .time { font-size: 48px; font-weight: 700; color: var(--orange); }
+.reveal .slides .program .now h1 { font-size: 120px !important; line-height: 1 !important; margin: 14px 0 0 !important; }
+.reveal .program .tag-next { display: inline-block; font-weight: 700; font-size: 30px; line-height: 1; color: #222b76; background: var(--orange); padding: 9px 34px 10px; clip-path: polygon(16px 0, calc(100% - 16px) 0, 100% 50%, calc(100% - 16px) 100%, 16px 100%, 0 50%); }
+.reveal .slides section.session .program .people { display: flex; flex-wrap: wrap; gap: 2px 34px; font-family: var(--body, "PT Sans", sans-serif); font-weight: 400; font-size: 34px; line-height: 1.35; color: #dfe3fa !important; margin: 18px 0 0; }
+.reveal .program .people span { white-space: nowrap; }
 /* ---------- content styles ---------- */
 /* hexes: a list as outlined hexagons, for three or four short points */
 .reveal .hexes > ul { display: flex; justify-content: center; gap: 46px; list-style: none; margin: 10px 0 0; padding: 0; }
@@ -216,3 +243,4 @@ html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.wombat-t
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.image-full { padding: 0 100px 80px !important; }
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.talk { padding: 64px 100px 106px !important; }
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.break { padding: 60px 100px 190px !important; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.session { padding: 84px 100px 110px !important; }
