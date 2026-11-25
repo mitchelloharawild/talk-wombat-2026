@@ -1,0 +1,68 @@
+<script>
+// Animated backgrounds: drifting hexagons on navy slides, parallax waves on breaks.
+// Every slide shares the same clock, so motion carries on through slide changes.
+// PDF export and reduced motion keep the still images in wombat.css.
+(function () {
+  if (/print-pdf|view=print/i.test(location.search) || matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+  function div(cls, parent) {
+    const el = document.createElement("div");
+    el.className = cls;
+    parent.append(el);
+    return el;
+  }
+  function loop(el, frames, seconds, phase) {
+    el.animate(frames, { duration: seconds * 1000, iterations: Infinity, iterationStart: phase || 0 }).startTime = 0;
+  }
+
+  // Hexagon centres and radii on a 1600 x 900 stage, as in night.svg, then the
+  // rise (-) or fall (+) in px over one crossing.
+  const HEXES = [[1430, 150, 390, 160], [880, 10, 108, 220], [995, 215, 62, -190], [-5, 290, 115, 260], [40, 840, 230, -200],
+    [520, 745, 78, -280], [1000, 880, 145, -240], [1320, 690, 52, 180], [1590, 800, 130, -150]];
+  function night(bg) {
+    const stage = div("hex-stage", div("bg-anim", bg));
+    for (const [cx, cy, r, dy] of HEXES) {
+      const w = Math.sqrt(3) * r, x = cx - w / 2, travel = 1600 + w, phase = (1600 - x) / travel;
+      const el = div("hex", stage);
+      el.style.cssText = `left:100%;top:${(cy - r) / 9}%;width:${w / 16}%;height:${2 * r / 9}%`;
+      // Right to left, from just off one edge to just off the other; larger is nearer and faster.
+      // The slope passes through the night.svg position, and only resets while off screen.
+      const speed = 8 + r * 0.03; // px per second
+      loop(el, [{ transform: `translate(0, ${-dy * phase / (2 * r) * 100}%)` },
+        { transform: `translate(${-100 * travel / w}%, ${dy * (1 - phase) / (2 * r) * 100}%)` }],
+        travel / speed, phase);
+    }
+  }
+
+  // The website's hero wave (js/hero-wave.html): integer frequencies, so each tile repeats exactly.
+  const TILE = 2880, W = TILE * 2, H = 160, PTS = 500;
+  const WAVES = [
+    { center: .68, comps: [[38, 3, .5], [18, 7, 1.2], [10, 11, 2], [6, 2, .3]], fill: "rgba(160,100,5,.08)", stroke: "rgba(140,85,5,.22)", width: 2, speed: 48 },
+    { center: .58, comps: [[28, 4, 1.8], [14, 9, .5], [8, 14, 1.5], [5, 2, 2.6]], fill: "rgba(195,135,15,.06)", stroke: "rgba(155,95,5,.14)", width: 1.5, speed: 32 },
+    { center: .76, comps: [[18, 5, 2.2], [9, 12, .7], [5, 19, 1.5]], fill: "none", stroke: "rgba(120,68,5,.11)", width: 1, speed: 20 }
+  ].map(l => {
+    let d = "";
+    for (let i = 0; i <= PTS; i++) {
+      const x = i / PTS * W;
+      const y = l.comps.reduce((s, [a, f, p]) => s + a * Math.sin(2 * Math.PI * f * x / TILE + p), l.center * H);
+      d += (i ? "L" : "M") + x.toFixed(1) + " " + y.toFixed(1);
+    }
+    const fill = l.fill === "none" ? "" : `<path d="${d}L${W} ${H} L0 ${H}Z" fill="${l.fill}"/>`;
+    return { speed: l.speed, svg: `<svg viewBox="0 0 ${W} ${H}" preserveAspectRatio="none">${fill}<path d="${d}" fill="none" stroke="${l.stroke}" stroke-width="${l.width}"/></svg>` };
+  });
+  function waves(bg) {
+    const layer = div("bg-anim", bg);
+    for (const w of WAVES) {
+      const el = div("wave", layer);
+      el.innerHTML = w.svg;
+      loop(el, [{ transform: "translateX(0)" }, { transform: "translateX(-50%)" }], w.speed);
+    }
+  }
+
+  function init() {
+    document.querySelectorAll(".reveal .slide-background.slide:is(.night, .title-slide:not(.light))").forEach(night);
+    document.querySelectorAll(".reveal .slide-background.slide.break").forEach(waves);
+  }
+  function start() { Reveal.isReady() ? init() : Reveal.on("ready", init); }
+  window.Reveal ? start() : window.addEventListener("load", start);
+})();
+</script>

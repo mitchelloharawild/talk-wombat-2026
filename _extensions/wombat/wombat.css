@@ -63,6 +63,14 @@
 .reveal .slide-background:is(.night, .title-slide:not(.light)) { background-color: #222b76; }
 .reveal .slide-background:is(.night, .title-slide:not(.light))::before { display: block; inset: 0; width: 100%; height: 100%; background: url(img/night.svg) center / cover; -webkit-mask-image: none; mask-image: none; }
 
+/* animated versions, added by backgrounds.html; the images above stay for PDF and reduced motion */
+.reveal .slide-background:has(> .bg-anim):is(.night, .title-slide:not(.light))::before, .reveal .slide-background.break:has(> .bg-anim)::after { display: none; }
+.reveal .bg-anim { position: absolute; inset: 0; overflow: hidden; pointer-events: none; container-type: size; }
+.reveal .hex-stage { position: absolute; left: 50%; top: 50%; width: max(100cqw, 177.778cqh); aspect-ratio: 16 / 9; translate: -50% -50%; }
+.reveal .hex-stage .hex { position: absolute; background: rgba(74,91,222,.25); clip-path: var(--hexclip); will-change: transform; }
+.reveal .bg-anim .wave { position: absolute; left: 0; bottom: 0; width: 200%; height: 27%; will-change: transform; }
+.reveal .bg-anim .wave svg { display: block; width: 100%; height: 100%; }
+
 /* text on navy */
 .reveal section.slide:is(.night, .title-slide:not(.light)), .reveal section.slide:is(.night, .title-slide:not(.light)) :is(h1, h2, h3, h4, strong, .wm, dt) { color: #fff; }
 .reveal section.slide:is(.night, .title-slide:not(.light)) .yr { color: var(--orange); }
