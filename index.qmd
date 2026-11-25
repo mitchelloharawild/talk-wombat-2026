@@ -325,6 +325,17 @@ Monash University, Melbourne CBD
 
 Keynote: Rob Hyndman
 
+## Theme {.theme-hero .plain .no-footer background-color="#222b76"}
+
+::: {.acrostic}
+* [T]{.initial}imely
+* [I]{.initial}nsights,
+* [M]{.initial}odels, [&]{.amp}
+* [E]{.initial}xploration
+:::
+
+![](img/opening/theme-figures.svg){.nostretch alt="A time series, a bar chart, a neural network and a scatter plot"}
+
 ## Today's program {.program-day}
 
 | | |
