@@ -128,7 +128,7 @@ Best 2025: `IMG_4538` (full room), `4492` (crowd), `4473` (break), `4679` (socia
 
 Changed for 2026:
 
-* Committee: Mitchell O'Hara-Wild (chair, tutorials), Krisanat Anukarnsakulchularp (chair, workshop), Maliny Po (visitor logistics), Janith Wanniarachchi (webmaster), Elio Campitelli (social media), Tina Rashid Jafari (volunteers)
+* Committee: Mitchell O'Hara-Wild (general chair), Krisanat Anukarnsakulchularp (program chair), Maliny Po (visitor logistics), Janith Wanniarachchi (webmaster & AV lead), Elio Campitelli (social media), Tina Rashid Jafari (volunteers)
 * Badge stickers: red dot = no photos, green = looking for work, blue = hiring, pronoun stickers. **In 2025 green marked organisers**, so do not reuse that line
 * Hashtag `#WOMBAT2026`
 * Live program: <https://wombat.numbat.space/live.html>

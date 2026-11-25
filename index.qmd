@@ -42,23 +42,23 @@ Monash Business Analytics Team
 ::: {.presenter}
 ![](img/committee/mitchell-ohara-wild.jpg){.nostretch alt="Mitchell O'Hara-Wild"}
 
-### Mitchell O'Hara-Wild
+### Mitchell<br>O'Hara-Wild
 
-Chair (tutorials)
+General chair
 :::
 
 ::: {.presenter}
 ![](img/committee/krisanat-anukarnsakulchularp.jpg){.nostretch alt="Krisanat Anukarnsakulchularp"}
 
-### Krisanat Anukarnsakulchularp
+### Krisanat<br>Anukarnsakulchularp
 
-Chair (workshop)
+Program chair
 :::
 
 ::: {.presenter}
 ![](img/committee/maliny-po.jpg){.nostretch alt="Maliny Po"}
 
-### Maliny Po
+### Maliny<br>Po
 
 Visitor logistics
 :::
@@ -66,15 +66,15 @@ Visitor logistics
 ::: {.presenter}
 ![](img/committee/janith-wanniarachchi.jpg){.nostretch alt="Janith Wanniarachchi"}
 
-### Janith Wanniarachchi
+### Janith<br>Wanniarachchi
 
-Webmaster
+Webmaster & AV lead
 :::
 
 ::: {.presenter}
 ![](img/committee/elio-campitelli.jpg){.nostretch alt="Elio Campitelli"}
 
-### Elio Campitelli
+### Elio<br>Campitelli
 
 Social media
 :::
@@ -82,7 +82,7 @@ Social media
 ::: {.presenter}
 ![](img/committee/tina-rashid-jafari.jpg){.nostretch alt="Tina Rashid Jafari"}
 
-### Tina Rashid Jafari
+### Tina<br>Rashid Jafari
 
 Volunteer lead
 :::

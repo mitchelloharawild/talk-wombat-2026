@@ -1,10 +1,13 @@
 /* Opening slides. Uses the variables and hexagons from the wombat extension. */
 
 /* organising committee */
-.reveal .committee { display: grid; grid-template-columns: repeat(6, 1fr); gap: 24px; margin-top: 90px; }
-.reveal .slides .committee .presenter > p:has(img) { width: 200px; }
-.reveal .slides .committee .presenter h3 { font-size: 29px; margin: 22px 0 6px; }
-.reveal .committee .presenter { font-size: 24px; }
+/* 3 x 2, second row shifted right; columns fit the longest surname on one line */
+.reveal .committee { display: grid; grid-template-columns: repeat(3, 476px); row-gap: 70px; margin-top: 80px; }
+.reveal .slides .committee .presenter { display: grid; grid-template-columns: 170px max-content; grid-template-rows: 1fr auto auto 1fr; column-gap: 20px; font-size: 26px; text-align: left; }
+.reveal .slides .committee .presenter:nth-child(n + 4) { position: relative; left: 96px; }
+.reveal .slides .committee .presenter > p:has(img) { grid-area: 1 / 1 / -1 / 2; width: 170px; margin: 0; }
+.reveal .slides .committee .presenter h3 { grid-area: 2 / 2; font-size: 30px; line-height: 1.15; margin: 0 0 8px; }
+.reveal .committee .presenter > p:not(:has(img)) { grid-area: 3 / 2; margin: 0; }
 
 .reveal .callout a[href^="mailto"] { white-space: nowrap; }
 
