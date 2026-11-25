@@ -60,8 +60,8 @@
 
 /* theme hero: words stacked to spell TIME, a figure beside each */
 .reveal .slides section.slide.theme-hero { color: #fff; }
-.reveal .slides section.slide.theme-hero > h2 { position: absolute; left: 100px; top: 100px; margin: 0; font-size: 25px; line-height: 1.2; text-transform: uppercase; letter-spacing: .12em; color: var(--orange); }
-.reveal .slides section.theme-hero .acrostic ul { position: absolute; left: 100px; top: 110px; margin: 0; list-style: none; font-family: var(--display); font-weight: 700; font-size: 128px; line-height: 180px; letter-spacing: -.015em; }
+.reveal .slides section.theme-hero > h2 { display: none; }
+.reveal .slides section.theme-hero .acrostic ul { position: absolute; left: 100px; top: 66px; margin: 0; list-style: none; font-family: var(--display); font-weight: 700; font-size: 128px; line-height: 192px; letter-spacing: -.015em; }
 .reveal .slides section.theme-hero .acrostic li { margin: 0; padding: 0; white-space: nowrap; }
 /* shift each line so the initials share a centre line (Cabin Bold glyph widths) */
 .reveal .slides section.theme-hero .acrostic li:nth-child(1) { margin-left: 18px; }
@@ -69,7 +69,7 @@
 .reveal .slides section.theme-hero .acrostic li:nth-child(4) { margin-left: 14px; }
 .reveal .acrostic .initial { color: var(--orange); }
 .reveal .acrostic .amp { color: var(--lavender); font-weight: 600; }
-.reveal .slides section.theme-hero img { position: absolute; left: 900px; top: 110px; width: 600px; height: 720px; max-width: none; max-height: none; margin: 0; }
+.reveal .slides section.theme-hero img { position: absolute; left: 860px; top: 66px; width: 640px; height: 768px; max-width: none; max-height: none; margin: 0; }
 
 .reveal .slides section.program-day table { font-size: 31px; }
 .reveal .slides section.program-day table td { padding: 9px 18px 9px 0; }
