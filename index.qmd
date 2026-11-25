@@ -126,10 +126,10 @@ Response team:
 :::
 :::
 
-## Photos, recording and badges
+## Photos, recording and badges {.badges}
 
 ::: columns
-::: {.column width="50%"}
+::: {.column width="47%"}
 
 ### Today is recorded
 
@@ -137,18 +137,29 @@ Response team:
 * Photos are taken throughout the day
 * Post yours with `#WOMBAT2026`
 
+![](img/badge-stickers.svg){.badge-illus fig-alt="Name badge with a space for a pronoun sticker at bottom left and for coloured dots at bottom right"}
+
 :::
-::: {.column width="50%"}
+::: {.column width="53%"}
 
 ### Badge stickers
 
-[]{.dot .red} No photos, please
+Optional, from the registration desk
 
-[]{.dot .green} Looking for work
+::: {.sticker .red}
+**No photos, please**\
+Please don't take or share photos of me.
+:::
 
-[]{.dot .blue} Hiring
+::: {.sticker .green}
+**Looking for work**\
+Open to job opportunities. Come say hello.
+:::
 
-Pronoun stickers too, all at the registration desk
+::: {.sticker .blue}
+**Hiring**\
+My team is hiring. Ask me about it.
+:::
 
 :::
 :::
@@ -203,19 +214,13 @@ Click Live Program on the home page (shown on 30 November and 1 December only). 
 
 # Ten years of WOMBAT {kicker="2016 – 2026"}
 
-## {.titlecard .plain .no-footer}
+## 2016 {.past-event .night .no-footer kicker="Making Data Analysis Easier"}
 
-Making Data Analysis Easier\
-a workshop organised by the\
-Monash Business Analytics Team\
-(WOMBAT)
+[![](img/opening/site-2016.jpg){.nostretch alt="WOMBAT 2016 website"}](https://wombat.numbat.space/2016)
 
-18-19 February, 2016\
-Melbourne Zoo, Victoria
+Melbourne Zoo
 
-::: notes
-Recreates the title card of Hadley's 2016 keynote recording: <https://www.youtube.com/watch?v=uc4Tx8d_ZZg>
-:::
+Keynote: Hadley Wickham
 
 ## Melbourne Zoo, 2016 {.image-full background-image="img/opening/2016-room.jpg"}
 
@@ -225,42 +230,6 @@ Hadley Wickham, "Managing many models"
 
 Spot yourself, ten years younger
 
-## A workshop at the zoo {kicker="From the 2016 program"}
-
-::: columns
-::: {.column width="46%"}
-
-* "Zoo entry, find Bong Su room"
-* "Turn off at the orangutans"
-* Lunch: "Orangutans at 12:00, Gorillas at 12:30"
-* "Free zoo time", both afternoons
-* Sold out
-
-:::
-::: {.column width="54%"}
-
-![](img/opening/2016-zoo-map.jpg){.nostretch alt="Hand-annotated Melbourne Zoo map with the route to the conference room"}
-
-:::
-:::
-
-<!-- Past events. Add photo slides after any year:
-## WOMBAT 2022 {.photo-slide .night .no-footer}
-
-::: {.wall}
-![](img/opening/a.jpg){.nostretch}
-![](img/opening/b.jpg){.nostretch}
-:::
--->
-
-## 2016 {.past-event .night .no-footer kicker="Making Data Analysis Easier"}
-
-[![](img/opening/site-2016.jpg){.nostretch alt="WOMBAT 2016 website"}](https://wombat.numbat.space/2016)
-
-Melbourne Zoo
-
-Keynote: Hadley Wickham
-
 ## 2017 {.past-event .night .no-footer kicker="Reproducible Data Analysis"}
 
 [![](img/opening/site-2017.jpg){.nostretch alt="WOMBAT 2017 website"}](https://wombat.numbat.space/2017)
@@ -269,13 +238,33 @@ NAB, 700 Bourke St
 
 Keynote: Yihui Xie
 
+## WOMBAT 2017 {.photo-slide .night .no-footer}
+
+::: {.wall .lead}
+![](img/opening/2017-crowd.jpeg){.nostretch alt="Panel discussion at NAB, seen from the audience"}
+![](img/opening/2017-question.jpeg){.nostretch alt="An audience member asking a question"}
+![](img/opening/2017-tierney.jpeg){.nostretch alt="Nick Tierney presenting"}
+:::
+
 ## 2019 {.past-event .night .no-footer kicker="Making Data Analysis Easier"}
 
 [![](img/opening/site-2019.jpg){.nostretch alt="WOMBAT 2019 website"}](https://wombat.numbat.space/2019)
 
 State Library Victoria
 
-Keynotes: Hadley Wickham, Galit Shmueli
+Keynotes:
+
+* Hadley Wickham
+* Galit Shmueli
+
+## WOMBAT 2019 {.photo-slide .night .no-footer}
+
+::: {.wall .lead-three}
+![](img/opening/2019-crowd.jpeg){.nostretch alt="The audience at State Library Victoria"}
+![](img/opening/2019-tea.jpeg){.nostretch alt="Crowd during a break"}
+![](img/opening/2019-di.jpeg){.nostretch alt="Di Cook at the lectern"}
+![](img/opening/2019-break.jpeg){.nostretch alt="Conversation over drinks"}
+:::
 
 ## 2022 {.past-event .night .no-footer kicker="Communicating with Data"}
 
@@ -285,6 +274,14 @@ Royal South Yarra Lawn Tennis Club
 
 Keynote: Amanda Cox
 
+<!-- TODO: 2022 photos
+## WOMBAT 2022 {.photo-slide .night .no-footer}
+
+::: {.wall}
+![](img/opening/2022-a.jpg){.nostretch}
+:::
+-->
+
 ## 2024 {.past-event .night .no-footer kicker="Open the World with Open Source"}
 
 [![](img/opening/site-2024.jpg){.nostretch alt="WOMBAT 2024 website"}](https://wombat.numbat.space/2024)
@@ -292,6 +289,13 @@ Keynote: Amanda Cox
 Monash University, Melbourne CBD
 
 Keynote: Michael Lawrence
+
+## WOMBAT 2024 {.photo-slide .night .no-footer}
+
+::: {.wall .pair}
+![](img/opening/2024-crowd.jpeg){.nostretch alt="A workshop session"}
+![](img/opening/2024-elio.jpeg){.nostretch alt="Elio Campitelli presenting"}
+:::
 
 ## 2025 {.past-event .night .no-footer kicker="Designing Data Driven Discoveries"}
 
@@ -311,6 +315,14 @@ Keynote: Nicola Rennie
 ![](img/opening/2025-4652.jpg){.nostretch alt="In conversation"}
 ![](img/opening/2025-4679.jpg){.nostretch alt="Social time"}
 :::
+
+## 2026 {.past-event .night .no-footer}
+
+[![](img/opening/site-2026.jpg){.nostretch alt="WOMBAT 2026 website"}](https://wombat.numbat.space)
+
+Monash University, Melbourne CBD
+
+Keynote: Rob Hyndman
 
 ## Today's program {.program-day}
 

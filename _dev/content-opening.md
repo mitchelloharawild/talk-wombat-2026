@@ -27,16 +27,15 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 5 | Badges and photos | sticker legend, recording, hashtag | callouts | 1 |
 | 6 | Online | website, live program, Wi-Fi | callouts | 0.5 |
 | 7 | **Ten years of WOMBAT** | section divider, "2016 – 2026" | `#` divider | – |
-| 8 | February 2016 | recreate the video's title card: "18–19 February, 2016 · Melbourne Zoo, Victoria" | still `0005`, then fade to 9 | 0.5 |
-| 9 | Melbourne Zoo | the room, Hadley presenting, jungle windows | `.image-full`, still `2250` | 0.5 |
-| 10 | Were you there? | hands up, spot yourself | photo wall, 5–6 crowd stills | 1 |
-| 11 | A workshop at the zoo | programme quirks and annotated map (below) | `ZooMapAnnotated.jpg` `image-right` | 1 |
-| 12 | Seven WOMBATs | year, theme, venue; one site per advance | website screenshots (below) | 2 |
-| 13 | Along the way | photos from each year | photo wall, **needs your photos** | 1.5 |
+| 8 | Each WOMBAT in turn | website snapshot (year, theme, venue, keynote), then a few photos | `.past-event`, then photos |  |
+| 8a | 2016 photos | the room, then "Were you there?" | `.image-full`, stills `2250` and `2403` |  |
+| 8b | 2017, 2019, 2024, 2025 photos | photo walls | `.photo-slide` |  |
+| 8c | 2022 photos | **needs your photos** | `.photo-slide`, commented out in `index.qmd` |  |
+| 8d | 2026 | website snapshot, no theme, no photos yet | `.past-event` |  |
 | 14 | Today | the program | existing `## Today's program` | 1 |
 | → | Keynote | existing session slide | | |
 
-About 13 min in total. If short on time, cut 13 first, then merge 3 into the closing thanks (2025 showed the committee up front).
+If short on time, cut photo slides first, then merge 3 into the closing thanks (2025 showed the committee up front).
 
 ### Alternatives considered
 
@@ -86,20 +85,20 @@ From the 2016 site (`~/github/WOMBAT2016`):
 
 | Still | Shows | Use |
 |---|---|---|
-| `0005-title-card` | Event title card | 8 |
-| `2250-room-wide` | Whole room, screen, roof beams, crowd | 9 (hero) |
-| `2403-crowd-front-wide` | Crowd from the front, backpacks | 10 (largest tile) |
-| `2575-front-row-wide` | Front row, audience question, bamboo | 10 |
-| `1424-crowd-back-jungle` | Crowd against the greenery | 10 |
-| `2258-crowd-front` | Crowd, taking notes | 10 |
-| `2991-crowd-front-late` | Closer crowd | 10 |
-| `0220-front-row-projector` | Front row and projector | 10 spare |
-| `1272-crowd-back-wide` | Backs of crowd, dark; text overlays well | 7 or 9 spare |
+| `0005-title-card` | Event title card | unused |
+| `2250-room-wide` | Whole room, screen, roof beams, crowd | 8a (hero) |
+| `2403-crowd-front-wide` | Crowd from the front, backpacks | 8a |
+| `2575-front-row-wide` | Front row, audience question, bamboo | spare |
+| `1424-crowd-back-jungle` | Crowd against the greenery | spare |
+| `2258-crowd-front` | Crowd, taking notes | spare |
+| `2991-crowd-front-late` | Closer crowd | spare |
+| `0220-front-row-projector` | Front row and projector | spare |
+| `1272-crowd-back-wide` | Backs of crowd, dark; text overlays well | 7 spare |
 | `0500-crowd-back-screen` | Crowd and screen from behind | spare |
 | `0985-crowd-side-ceiling` | Crowd side-on | spare |
 | `2309-crowd-front-close` | Crowd, individuals prominent | spare |
 | `2466-question-standing` | Standing attendee with microphone | spare |
-| `1171-hadley-pointing` | Hadley pointing at purrr code | 9 spare |
+| `1171-hadley-pointing` | Hadley pointing at purrr code | spare |
 | `1918-laptop`, `2205-note-taking` | Details, no faces | texture tiles |
 
 The stills show identifiable attendees. The recording is already public; prefer wide shots over single faces.
@@ -109,13 +108,13 @@ The stills show identifiable attendees. The recording is already public; prefer 
 | Year | Have | Need |
 |---|---|---|
 | 2016 | stills, zoo map, speaker headshots | any candid or zoo photos |
-| 2017 | **none** | anything |
-| 2019 | **none** (site images are stock) | State Library |
+| 2017 | crowd, question, Nick Tierney | – |
+| 2019 | crowd, tea, Di Cook, break | – |
 | 2022 | **none** (Amanda Cox headshot only) | tennis club |
-| 2024 | **none** found | workshop, mugs |
+| 2024 | workshop crowd, Elio Campitelli | – |
 | 2025 | 9 in `WOMBAT2025/img/thank-you/`; `~/Downloads/PXL_20250930_052152856.jpg` (full room); `img/workshop.jpg` is the same shot as `IMG_4538` | – |
 
-Best 2025: `IMG_4538` (full room), `4492` (crowd), `4473` (break), `4679` (social), `4652` (Rob on the conversation panel). Drop yours in `_dev/opening/photos/<year>/`. If a year stays empty, its website screenshot carries slide 12 and slide 13 skips it.
+Best 2025: `IMG_4538` (full room), `4492` (crowd), `4473` (break), `4679` (social), `4652` (Rob on the conversation panel). Drop yours in `_dev/opening/photos/<year>/`. If a year stays empty, its website screenshot stands alone.
 
 ## Reused from 2025
 
@@ -139,6 +138,7 @@ Changed for 2026:
 * Recorded: yes. Social event: yes, **venue and time still to add** (TODO in `index.qmd`)
 * No mention of celebrating Rob's career; no other opening speakers planned
 * No then-and-now slide: avoid drawing that much attention to it
-* Slides 9 and 10 use stills `2250` and `2403` full-bleed; no 2016 photo wall
+* 2016 photos are stills `2250` and `2403` full-bleed; no 2016 photo wall
+* No title card recreation or 2016 program (zoo map) slide
 * Live program: website embedded in a slide
-* Slide 13: 2025 photo wall built; other years to come, one `.photo-slide` after each year
+* Photos follow each year's website snapshot: all built except 2022, which has none yet
