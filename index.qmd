@@ -6,35 +6,364 @@ format:
   wombat-revealjs:
     slide-number: false
     embed-resources: true
+    css: opening.css
 ---
 
 ## Acknowledgement of Country {.night}
 
-<!-- TODO: add acknowledgement -->
+We acknowledge the Traditional Owners of the land on which we gather, the Wurundjeri people of the Kulin Nation.
 
-*To come*
+We pay our respects to Elders past and present, and recognise their continuing connection to Country, culture, and community here in Naarm (Melbourne).
 
-## Welcome
+::: {.fragment}
+*Wombat* in the Woi Wurrung language is **warin**.
+:::
 
-<!-- TODO: about WOMBAT and the organising committee -->
+## Welcome to WOMBAT
 
-*To come*
+::: columns
+::: {.column width="54%"}
 
-## Today's program
+Workshop Organised by the\
+Monash Business Analytics Team
 
-<!-- TODO: overview of the day -->
+* Open source tools for data analysis
+* Academia, industry and government together
+* Learn, discuss, meet someone new
 
-* Keynote
-* Time series analysis
-* Showcase and conversation
-* AI and LLMs
-* Closing discussion
+:::
+:::
 
-## Safety and housekeeping
+![](img/opening/2025-4492.jpg){.image-right .nostretch alt="Attendees at WOMBAT 2025"}
 
-<!-- TODO: emergency exits, amenities, Wi-Fi, badge stickers, code of conduct -->
+## Organising committee
 
-*To come*
+::::::: {.committee}
+::: {.presenter}
+![](img/committee/mitchell-ohara-wild.jpg){.nostretch alt="Mitchell O'Hara-Wild"}
+
+### Mitchell O'Hara-Wild
+
+Chair (tutorials)
+:::
+
+::: {.presenter}
+![](img/committee/krisanat-anukarnsakulchularp.jpg){.nostretch alt="Krisanat Anukarnsakulchularp"}
+
+### Krisanat Anukarnsakulchularp
+
+Chair (workshop)
+:::
+
+::: {.presenter}
+![](img/committee/maliny-po.jpg){.nostretch alt="Maliny Po"}
+
+### Maliny Po
+
+Visitor logistics
+:::
+
+::: {.presenter}
+![](img/committee/janith-wanniarachchi.jpg){.nostretch alt="Janith Wanniarachchi"}
+
+### Janith Wanniarachchi
+
+Webmaster
+:::
+
+::: {.presenter}
+![](img/committee/elio-campitelli.jpg){.nostretch alt="Elio Campitelli"}
+
+### Elio Campitelli
+
+Social media
+:::
+
+::: {.presenter}
+![](img/committee/tina-rashid-jafari.jpg){.nostretch alt="Tina Rashid Jafari"}
+
+### Tina Rashid Jafari
+
+Volunteer lead
+:::
+:::::::
+
+## Safety and help
+
+::: columns
+::: {.column width="50%"}
+
+::: {.callout-important}
+## Evacuation
+"Woop woop woop - evacuate now"
+
+* Stairs beside the lifts, down to the lobby
+* Assemble at the park to the west
+:::
+
+::: {.callout-tip}
+## Getting help
+Ask an organiser, or email\
+<buseco-ebs.wombat@monash.edu>
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.callout-note}
+## Code of conduct
+Be kind, respectful and considerate. Full version on the website.
+
+Response team:
+
+* Di Cook
+* Rob Hyndman
+* Michael Lydeamore
+* Mitchell O'Hara-Wild
+* Krisanat Anukarnsakulchularp
+:::
+
+:::
+:::
+
+## Photos, recording and badges
+
+::: columns
+::: {.column width="50%"}
+
+### Today is recorded
+
+* Talks are filmed
+* Photos are taken throughout the day
+* Post yours with `#WOMBAT2026`
+
+:::
+::: {.column width="50%"}
+
+### Badge stickers
+
+[]{.dot .red} No photos, please
+
+[]{.dot .green} Looking for work
+
+[]{.dot .blue} Hiring
+
+Pronoun stickers too, all at the registration desk
+
+:::
+:::
+
+## Information online
+
+::: columns
+::: {.column width="50%"}
+
+::: {.callout-warning}
+## Website
+Program, speakers and abstracts
+
+[wombat.numbat.space](https://wombat.numbat.space)
+:::
+
+::: {.callout-important}
+## Live program
+What's on now and next, all day
+
+[wombat.numbat.space/live](https://wombat.numbat.space/live.html)
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.callout-note}
+## Wi-Fi
+* `eduroam` for students and academics
+* `Monash Guest Wi-Fi` for everyone else
+:::
+
+<!-- TODO: social event time and venue -->
+
+::: {.callout-tip}
+## Social event
+After the closing discussion, all welcome
+:::
+
+:::
+:::
+
+## Live program {.live}
+
+```{=html}
+<iframe data-external="1" data-src="https://wombat.numbat.space/" title="WOMBAT 2026 website"></iframe>
+```
+
+::: notes
+Click Live Program on the home page (shown on 30 November and 1 December only). Then click outside the frame so that the clicker controls the slides again. Needs internet.
+:::
+
+# Ten years of WOMBAT {kicker="2016 – 2026"}
+
+## {.titlecard .plain .no-footer}
+
+Making Data Analysis Easier\
+a workshop organised by the\
+Monash Business Analytics Team\
+(WOMBAT)
+
+18-19 February, 2016\
+Melbourne Zoo, Victoria
+
+::: notes
+Recreates the title card of Hadley's 2016 keynote recording: <https://www.youtube.com/watch?v=uc4Tx8d_ZZg>
+:::
+
+## Melbourne Zoo, 2016 {.image-full background-image="img/opening/2016-room.jpg"}
+
+Hadley Wickham, "Managing many models"
+
+## Were you there? {.image-full background-image="img/opening/2016-crowd.jpg"}
+
+Spot yourself, ten years younger
+
+## A workshop at the zoo {kicker="From the 2016 program"}
+
+::: columns
+::: {.column width="46%"}
+
+* "Zoo entry, find Bong Su room"
+* "Turn off at the orangutans"
+* Lunch: "Orangutans at 12:00, Gorillas at 12:30"
+* "Free zoo time", both afternoons
+* Sold out
+
+:::
+::: {.column width="54%"}
+
+![](img/opening/2016-zoo-map.jpg){.nostretch alt="Hand-annotated Melbourne Zoo map with the route to the conference room"}
+
+:::
+:::
+
+<!-- Past events. Add photo slides after any year:
+## WOMBAT 2022 {.photo-slide .night .no-footer}
+
+::: {.wall}
+![](img/opening/a.jpg){.nostretch}
+![](img/opening/b.jpg){.nostretch}
+:::
+-->
+
+## 2016 {.past-event .night .no-footer kicker="Making Data Analysis Easier"}
+
+[![](img/opening/site-2016.jpg){.nostretch alt="WOMBAT 2016 website"}](https://wombat.numbat.space/2016)
+
+Melbourne Zoo
+
+Keynote: Hadley Wickham
+
+## 2017 {.past-event .night .no-footer kicker="Reproducible Data Analysis"}
+
+[![](img/opening/site-2017.jpg){.nostretch alt="WOMBAT 2017 website"}](https://wombat.numbat.space/2017)
+
+NAB, 700 Bourke St
+
+Keynote: Yihui Xie
+
+## 2019 {.past-event .night .no-footer kicker="Making Data Analysis Easier"}
+
+[![](img/opening/site-2019.jpg){.nostretch alt="WOMBAT 2019 website"}](https://wombat.numbat.space/2019)
+
+State Library Victoria
+
+Keynotes: Hadley Wickham, Galit Shmueli
+
+## 2022 {.past-event .night .no-footer kicker="Communicating with Data"}
+
+[![](img/opening/site-2022.jpg){.nostretch alt="WOMBAT 2022 website"}](https://wombat.numbat.space/2022)
+
+Royal South Yarra Lawn Tennis Club
+
+Keynote: Amanda Cox
+
+## 2024 {.past-event .night .no-footer kicker="Open the World with Open Source"}
+
+[![](img/opening/site-2024.jpg){.nostretch alt="WOMBAT 2024 website"}](https://wombat.numbat.space/2024)
+
+Monash University, Melbourne CBD
+
+Keynote: Michael Lawrence
+
+## 2025 {.past-event .night .no-footer kicker="Designing Data Driven Discoveries"}
+
+[![](img/opening/site-2025.jpg){.nostretch alt="WOMBAT 2025 website"}](https://wombat.numbat.space/2025)
+
+Monash University, Melbourne CBD
+
+Keynote: Nicola Rennie
+
+## WOMBAT 2025 {.photo-slide .night .no-footer}
+
+::: {.wall}
+![](img/opening/2025-4538.jpg){.nostretch alt="Full room"}
+![](img/opening/2025-4401.jpg){.nostretch alt="A speaker presenting"}
+![](img/opening/2025-4473.jpg){.nostretch alt="Conversation during a break"}
+![](img/opening/2025-4492.jpg){.nostretch alt="The audience"}
+![](img/opening/2025-4652.jpg){.nostretch alt="In conversation"}
+![](img/opening/2025-4679.jpg){.nostretch alt="Social time"}
+:::
+
+## Then and now {.night}
+
+:::::: {.pairs}
+::::: {.pair}
+::: {.presenter}
+![](img/opening/2016-hadley.jpg){.nostretch alt="Hadley Wickham in 2016"}
+
+### 2016
+
+Hadley Wickham, keynote
+:::
+
+::: {.presenter}
+![](img/speakers/hadley-wickham.jpg){style="object-position: 30% 30%" .nostretch alt="Hadley Wickham"}
+
+### 2026
+
+In conversation, 1:30 pm
+:::
+:::::
+
+::::: {.pair}
+::: {.presenter}
+![](img/opening/2016-rob.jpg){.nostretch alt="Rob Hyndman on the 2016 website"}
+
+### 2016
+
+Rob Hyndman, "Making forecasting easier"
+:::
+
+::: {.presenter}
+![](img/speakers/rob-hyndman.jpg){.nostretch alt="Rob Hyndman"}
+
+### 2026
+
+Keynote, up next
+:::
+:::::
+::::::
+
+## Today's program {.program-day}
+
+| | |
+|---|---|
+| 9:00 am | Keynote: Rob Hyndman |
+| 10:00 am | Morning tea |
+| 10:30 am | Time series analysis |
+| 12:00 pm | Lunch |
+| 1:00 pm | Showcase and conversation |
+| 2:30 pm | Afternoon tea |
+| 3:00 pm | AI and LLMs |
+| 4:30 pm | Closing discussion, then social event |
 
 # Keynote {.session kicker="9:00 am"}
 
