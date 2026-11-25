@@ -1,0 +1,219 @@
+---
+title: Welcome to WOMBAT 2026
+subtitle: Workshop day
+kicker: Tuesday 1 December · Room 8.03
+format:
+  wombat-revealjs:
+    slide-number: false
+    embed-resources: true
+---
+
+## Spotting the weird ones {.talk .night kicker="Keynote · 9:00 am"}
+
+Anomaly detection often rests on ad hoc rules and hidden assumptions. Rob takes a principled statistical approach instead, using the {weird} package to find over-priced wines, errors in Old Faithful records and forgotten epidemics in 19th century France.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/rob-hyndman.jpg){.nostretch alt="Rob Hyndman"}
+
+### Rob Hyndman
+
+Distinguished Professor of Statistics at Monash University. Author of over 230 papers and 6 books, with 40 years in consulting.
+:::
+::::
+
+## Morning tea {.break until="10:30"}
+
+Back at 10:30 am
+
+# Time series analysis {kicker="10:30 am"}
+
+## mixtime: Temporal data for better analytics {.talk .night kicker="Talk · 10:30 am"}
+
+Most time classes handle a single granularity, forcing analysts to misrepresent their data. mixtime connects granularities through calendar algebra, so mixed-frequency data keeps its meaning through analysis and into ggtime graphics.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/mitchell-ohara-wild.jpg){.nostretch alt="Mitchell O'Hara-Wild"}
+
+### Mitchell O'Hara-Wild
+
+PhD candidate at Monash University. Develops open source forecasting tools including fable, distributional and mixtime.
+:::
+::::
+
+## The Future of Animals is in Our Hands: My Role as a Data Scientist in Wildlife Conservation {.talk .night kicker="Talk · 11:00 am"}
+
+Sri Lanka's wildlife faces shifting rainfall, changing landscapes and climate events such as El Niño. Thiyanga presents tools and forecasts built from animal movement data to better predict and protect wildlife.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/thiyanga-talagala.jpg){.nostretch alt="Thiyanga Talagala"}
+
+### Thiyanga Talagala
+
+Senior Lecturer, University of Sri Jayewardenepura. Monash PhD graduate and co-founder of R-Ladies Colombo.
+:::
+::::
+
+## Immutable by design: Trace-minimised forecasts for hierarchical time series {.talk .night kicker="Talk · 11:30 am"}
+
+Some forecasts must stay unchanged when a hierarchy is reconciled. Shanika formulates this as constrained optimisation, derives which forecasts can be kept immutable, and shows improved results on Australian domestic tourism.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/shanika-wickramasuriya.jpg){.nostretch alt="Shanika Wickramasuriya"}
+
+### Shanika Wickramasuriya
+
+Senior Lecturer at Monash University. Researches hierarchical forecasting, reconciliation and constrained forecasts.
+:::
+::::
+
+## Lunch {.break until="13:00"}
+
+Back at 1:00 pm
+
+# Showcase {kicker="1:00 pm"}
+
+## AI at Work: Practical Data Insights, Privacy and Human Judgement {.talk .night kicker="Showcase · 1:00 pm"}
+
+Practical examples of AI in everyday data analysis, from cleaning and exploring data to dashboards and business insights, within a protected environment and with human judgement at the centre.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/priya-dingorkar.jpg){.nostretch alt="Priya Dingorkar"}
+
+### Priya Dingorkar
+
+Senior Analyst at National Australia Bank. Monash Master of Business Analytics graduate.
+:::
+::::
+
+## Using an LLM Wiki for project delivery {.talk .night kicker="Showcase · 1:10 pm"}
+
+Inspired by Andrej Karpathy's LLM Wiki, Zola shows how a central project knowledge and context layer supported delivery of a large-scale project, with lessons learned and practical considerations.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/zola-batsaikhan.jpg){.nostretch alt="Zola Batsaikhan"}
+
+### Zola Batsaikhan
+
+AI and Data Consultant. Monash Master of Business Analytics graduate.
+:::
+::::
+
+## So… Can AI Do My Job Yet? {.talk .night kicker="Showcase · 1:20 pm"}
+
+AI writes code, explains errors and suggests next steps with remarkable confidence. Jaffie shares how it has changed day-to-day data science, what to hand over, and where the human still earns a seat at the table.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/jaffie-yang.jpg){.nostretch alt="Jaffie Yang"}
+
+### Jaffie Yang
+
+Senior Data Scientist at National Australia Bank. Monash Business Analytics graduate.
+:::
+::::
+
+## Analysis Workflows {.talk .night kicker="In conversation · 1:30 pm"}
+
+What does AI mean for data-driven work? A conversation on how it may change the way we build and use tools, and what it asks of us as mentors, leaders and collaborators.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/hadley-wickham.jpg){style="object-position: 30% 30%" .nostretch alt="Hadley Wickham"}
+
+### Hadley Wickham
+
+Chief Scientist at Posit, 2019 COPSS award winner and creator of the tidyverse.
+:::
+
+::: {.presenter}
+![](img/speakers/damjan-vukcevic.jpg){.nostretch alt="Damjan Vukcevic"}
+
+### Damjan Vukcevic
+
+Associate Professor at Monash, working on anytime-valid inference.
+:::
+
+::: {.presenter}
+![](img/speakers/cynthia-huang.jpg){.nostretch alt="Cynthia Huang"}
+
+### Cynthia Huang
+
+Host. Postdoctoral Research Fellow, LMU Munich, studying LLMs for data preparation.
+:::
+::::
+
+## Afternoon tea {.break until="15:00"}
+
+Back at 3:00 pm
+
+# AI and LLMs {kicker="3:00 pm"}
+
+## Leveraging Large Language Models for Accessible Data Visualisation {.talk .night kicker="Talk · 3:00 pm"}
+
+Reading a chart relies on sight, which excludes many visually impaired people. Maliny presents a framework that combines a visualisation, its source code and reference text to generate accessible descriptions with LLMs.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/maliny-po.jpg){.nostretch alt="Maliny Po"}
+
+### Maliny Po
+
+PhD student at Monash University. Researches data visualisation, natural language processing and LLMs.
+:::
+::::
+
+## Exposing AI by Explaining Explainers {.talk .night kicker="Talk · 3:15 pm"}
+
+Explainable AI methods offer insight into model predictions, but their explanations can be hard to interpret and often disagree. Janith proposes geometric representations that unify and visualise the different explainers.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/janith-wanniarachchi.jpg){.nostretch alt="Janith Wanniarachchi"}
+
+### Janith Wanniarachchi
+
+PhD student building visual tools for explainable AI. Author of kultarr, kumquat and sillysplines.
+:::
+::::
+
+## Beyond the Algorithm: Operationalising AI and Adaptive Governance in Infrastructure {.talk .night kicker="Talk · 3:30 pm"}
+
+A high-performing model is only the starting point in critical infrastructure. Yeasmin shares how Transurban moves AI from development to deployment, balancing cloud platforms and everyday AI with privacy and strict governance.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/yeasmin-khandakar.jpg){.nostretch alt="Yeasmin Khandakar"}
+
+### Yeasmin Khandakar
+
+Senior Data Scientist with over 15 years' experience. Co-author of the forecast package paper behind auto.arima.
+:::
+::::
+
+## From Idea to Production: Building an Agentic Forecasting Ecosystem in the Open {.talk .night kicker="Talk · 4:00 pm"}
+
+TimeCopilot brings foundation models and classical forecasting together behind LLM agents. Lessons on making agentic workflows reliable, designing APIs for a fast-moving landscape and building an AI ecosystem in the open.
+
+:::: {.presenters}
+::: {.presenter}
+![](img/speakers/renee-rosillo.jpg){.nostretch alt="Renée Rosillo"}
+
+### Renée Rosillo
+
+Co-Founder of TimeCopilot and AO Labs, working across agentic AI and machine learning.
+:::
+
+::: {.presenter}
+![](img/speakers/azul-garza.jpg){.nostretch alt="Azul Garza"}
+
+### Azul Garza
+
+Co-Founder of TimeCopilot, co-creator of TimeGPT and former CTO of Nixtla.
+:::
+::::
