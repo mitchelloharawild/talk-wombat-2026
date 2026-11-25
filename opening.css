@@ -58,18 +58,20 @@
 .reveal .slides .wall.lead-three img:first-child { grid-row: span 3; height: 733px; }
 .reveal .slides .wall.pair img { height: 734px; object-position: left; }
 
-/* theme hero: words stacked to spell TIME, a figure beside each */
-.reveal .slides section.slide.theme-hero { color: #fff; }
+/* theme hero: rows of a word and a figure, the initials spelling TIME */
+.reveal .slides section.slide.theme-hero { padding: 66px var(--px); }
 .reveal .slides section.theme-hero > h2 { display: none; }
-.reveal .slides section.theme-hero .acrostic ul { position: absolute; left: 100px; top: 66px; margin: 0; list-style: none; font-family: var(--display); font-weight: 700; font-size: 128px; line-height: 192px; letter-spacing: -.015em; }
-.reveal .slides section.theme-hero .acrostic li { margin: 0; padding: 0; white-space: nowrap; }
-/* shift each line so the initials share a centre line (Cabin Bold glyph widths) */
-.reveal .slides section.theme-hero .acrostic li:nth-child(1) { margin-left: 18px; }
-.reveal .slides section.theme-hero .acrostic li:nth-child(2) { margin-left: 35px; }
-.reveal .slides section.theme-hero .acrostic li:nth-child(4) { margin-left: 14px; }
-.reveal .acrostic .initial { color: var(--orange); }
-.reveal .acrostic .amp { color: var(--lavender); font-weight: 600; }
-.reveal .slides section.theme-hero img { position: absolute; left: 860px; top: 66px; width: 640px; height: 768px; max-width: none; max-height: none; margin: 0; }
+.reveal .theme-row { display: flex; justify-content: space-between; height: 192px; }
+.reveal .slides .theme-row p { margin: 0; }
+.reveal .slides .theme-row > p:first-child { font-family: var(--display); font-weight: 700; font-size: 128px; line-height: 192px; letter-spacing: -.015em; white-space: nowrap; }
+/* shift each word so the initials share a centre line (Cabin Bold glyph widths) */
+.reveal .slides .theme-row:nth-of-type(1) > p:first-child { padding-left: 18px; }
+.reveal .slides .theme-row:nth-of-type(2) > p:first-child { padding-left: 35px; }
+.reveal .slides .theme-row:nth-of-type(4) > p:first-child { padding-left: 14px; }
+.reveal .theme-row .initial { color: var(--orange); }
+.reveal .theme-row .amp { color: var(--lavender); font-weight: 600; }
+.reveal .slides .theme-row img { display: block; width: 640px; height: 192px; max-width: none; max-height: none; margin: 0; }
+.reveal .slides .theme-row ~ .theme-row img { box-shadow: 0 -2px 0 rgba(195, 201, 242, .3); }
 
 .reveal .slides section.program-day table { font-size: 31px; }
 .reveal .slides section.program-day table td { padding: 9px 18px 9px 0; }
@@ -77,3 +79,4 @@
 
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.photo-slide { padding: 40px 50px !important; }
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.live { padding: 40px 100px 110px !important; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.theme-hero { padding: 66px 100px !important; }

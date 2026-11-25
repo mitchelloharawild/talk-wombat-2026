@@ -327,14 +327,29 @@ Keynote: Rob Hyndman
 
 ## {#theme .theme-hero .night .no-footer}
 
-::: {.acrostic}
-* [T]{.initial}imely
-* [I]{.initial}nsights,
-* [M]{.initial}odels, [&]{.amp}
-* [E]{.initial}xploration
+::: {.theme-row .fragment .fade-up}
+[T]{.initial}imely
+
+![](img/opening/theme-timely.svg){.nostretch alt="A time series"}
 :::
 
-![](img/opening/theme-figures.svg){.nostretch alt="A time series, a bar chart, a neural network and a scatter plot"}
+::: {.theme-row .fragment .fade-up}
+[I]{.initial}nsights,
+
+![](img/opening/theme-insights.svg){.nostretch alt="A bar chart with one bar highlighted"}
+:::
+
+::: {.theme-row .fragment .fade-up}
+[M]{.initial}odels, [&]{.amp}
+
+![](img/opening/theme-models.svg){.nostretch alt="A neural network"}
+:::
+
+::: {.theme-row .fragment .fade-up}
+[E]{.initial}xploration
+
+![](img/opening/theme-exploration.svg){.nostretch alt="A scatter plot with one point picked out"}
+:::
 
 ## Today's program {.program-day}
 

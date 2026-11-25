@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="192" viewBox="0 384 640 192">
+<path stroke="#8f9ae6" stroke-opacity="0.5" stroke-width="2" fill="none" d="M20,424L220,408M20,424L220,456M20,424L220,504M20,424L220,552M20,480L220,408M20,480L220,456M20,480L220,504M20,480L220,552M20,536L220,408M20,536L220,456M20,536L220,504M20,536L220,552M220,408L420,408M220,408L420,456M220,408L420,504M220,408L420,552M220,456L420,408M220,456L420,456M220,456L420,504M220,456L420,552M220,504L420,408M220,504L420,456M220,504L420,504M220,504L420,552M220,552L420,408M220,552L420,456M220,552L420,504M220,552L420,552M420,408L620,480M420,456L620,480M420,504L620,480M420,552L620,480" />
+<polyline points="20,480 220,456 420,504 620,480" fill="none" stroke="#fbac27" stroke-width="5" stroke-linejoin="round" stroke-linecap="round" />
+<g fill="#c3c9f2">
+<circle cx="20" cy="424" r="11" /><circle cx="20" cy="536" r="11" />
+<circle cx="220" cy="408" r="11" /><circle cx="220" cy="504" r="11" /><circle cx="220" cy="552" r="11" />
+<circle cx="420" cy="408" r="11" /><circle cx="420" cy="456" r="11" /><circle cx="420" cy="552" r="11" />
+</g>
+<g fill="#fbac27">
+<circle cx="20" cy="480" r="13" /><circle cx="220" cy="456" r="13" /><circle cx="420" cy="504" r="13" /><circle cx="620" cy="480" r="16" />
+</g>
+</svg>

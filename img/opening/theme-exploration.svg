@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="640" height="192" viewBox="0 576 640 192">
+<g fill="#8f9ae6">
+<circle cx="30" cy="728" r="10" /><circle cx="70" cy="702" r="10" /><circle cx="95" cy="738" r="10" /><circle cx="130" cy="690" r="10" /><circle cx="165" cy="718" r="10" /><circle cx="200" cy="676" r="10" /><circle cx="238" cy="702" r="10" /><circle cx="270" cy="660" r="10" /><circle cx="305" cy="688" r="10" /><circle cx="345" cy="652" r="10" /><circle cx="380" cy="670" r="10" /><circle cx="420" cy="634" r="10" /><circle cx="455" cy="656" r="10" /><circle cx="500" cy="624" r="10" /><circle cx="570" cy="616" r="10" /><circle cx="612" cy="598" r="10" />
+</g>
+<circle cx="535" cy="724" r="13" fill="#fbac27" />
+<circle cx="535" cy="724" r="30" fill="none" stroke="#fbac27" stroke-width="4" />
+</svg>
