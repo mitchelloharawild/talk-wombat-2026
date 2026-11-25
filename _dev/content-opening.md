@@ -20,7 +20,7 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | # | Slide | Content | Visual / style | Min |
 |---|---|---|---|---|
 | 0 | Title (holding) | Welcome to WOMBAT 2026 | existing title slide | – |
-| 1 | Acknowledgement of Country | 2025 wording; *warin*, Woi Wurrung for wombat | `.night` | 1 |
+| 1 | Acknowledgement of Country | 2026 wording, both flags | `.country` | 1 |
 | 2 | Welcome | What WOMBAT is, who is in the room | `image-right`, 2025 crowd | 1 |
 | 3 | Organising committee | six people, photos and roles | person cards (new, small CSS) | 0.5 |
 | 4 | Safety and help | evacuation, code of conduct, who to ask | callouts | 1.5 |
@@ -118,7 +118,6 @@ Best 2025: `IMG_4538` (full room), `4492` (crowd), `4473` (break), `4679` (socia
 
 ## Reused from 2025
 
-* Acknowledgement: Wurundjeri people of the Kulin Nation, Naarm, *warin*
 * Evacuation: "Woop woop woop - evacuate now", stairs beside the lifts to the lobby, assemble at the park to the west
 * Code of conduct: be kind, respectful, considerate. Contacts in 2026: Di Cook, Rob Hyndman, Michael Lydeamore, Mitchell, Krisanat
 * Email: <buseco-ebs.wombat@monash.edu>

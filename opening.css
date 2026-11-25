@@ -1,5 +1,13 @@
 /* Opening slides. Uses the variables and hexagons from the wombat extension. */
 
+/* acknowledgement of country: earth tones, large text above layered ranges */
+.reveal .slides section.slide.country { padding-top: 56px; color: #fff; }
+.reveal .slides section.country > h2 { margin: 0 0 32px; color: #f2b36b; }
+.reveal .slides section.country > p { margin: 0 0 32px; font-size: 56px; line-height: 1.22; text-wrap: pretty; }
+.reveal .slides section.country .flags { position: absolute; left: 0; right: 0; bottom: 39px; }
+.reveal .slides section.country .flags p:has(img) { display: flex; justify-content: center; gap: 36px; margin: 0; }
+.reveal .slides section.country .flags img { height: 64px; width: 128px; max-width: none; margin: 0; outline: 2px solid #fff; outline-offset: 0; }
+
 /* organising committee */
 /* 3 x 2, second row shifted right; columns fit the longest surname on one line */
 .reveal .committee { display: grid; grid-template-columns: repeat(3, 476px); row-gap: 70px; margin-top: 80px; }

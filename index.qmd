@@ -9,14 +9,15 @@ format:
     css: opening.css
 ---
 
-## Acknowledgement of Country {.night}
+## Acknowledgement of Country {.country .plain .no-footer background-color="#2a1712" background-image="img/opening/country.svg"}
 
-We acknowledge the Traditional Owners of the land on which we gather, the Wurundjeri people of the Kulin Nation.
+We acknowledge the Wurundjeri Woi Wurrung people of the Kulin Nations, Traditional Owners of the land on which we gather. Sovereignty was never ceded.
 
-We pay our respects to Elders past and present, and recognise their continuing connection to Country, culture, and community here in Naarm (Melbourne).
+We pay our respects to Elders past and present, and welcome all Aboriginal and Torres Strait Islander people joining us here in Naarm (Melbourne).
 
-::: {.fragment}
-*Wombat* in the Woi Wurrung language is **warin**.
+::: {.flags}
+![](img/opening/flag-aboriginal.svg){.nostretch alt="Australian Aboriginal flag"}
+![](img/opening/flag-torres-strait-islander.svg){.nostretch alt="Torres Strait Islander flag"}
 :::
 
 ## Welcome to WOMBAT
