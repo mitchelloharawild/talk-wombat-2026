@@ -1,0 +1,10 @@
+<section id="$idprefix$title-slide" class="slide wombat-title $if(title-style)$$title-style$$else$night$endif$$if(photo)$ has-photo$endif$">
+<div class="lockup"><span class="hexlogo" role="img" aria-label="WOMBAT logo"></span><div><p class="wm">WOMBAT <span class="yr">2026</span></p><p class="org">Workshop Organised by the Monash Business Analytics Team</p></div></div>
+<div class="title-main">
+$if(kicker)$<p class="kick">$kicker$</p>$endif$
+<h1 class="title">$title$</h1>
+$if(subtitle)$<p class="subtitle">$subtitle$</p>$endif$
+</div>
+$if(photo)$<div class="hexphoto"><img src="$photo$" alt="$if(photo-alt)$$photo-alt$$endif$"></div>$endif$
+<div class="title-foot"><div class="people">$for(by-author)$<p class="person"><b>$it.name.literal$</b>$for(it.affiliations)$<span>$it.name$</span>$endfor$</p>$endfor$</div>$if(date)$<p class="date">$date$</p>$endif$</div>
+</section>

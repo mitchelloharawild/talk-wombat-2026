@@ -1,0 +1,40 @@
+<script>
+// Break slides: adds the WOMBAT 2026 lockup and a live countdown.
+// until="13:00" counts to that time today on this computer's clock (24 hour);
+// minutes=15 starts counting when the slide is first shown.
+(function () {
+  const breaks = [...document.querySelectorAll(".reveal .slides section.break")].map(s => {
+    const lockup = document.createElement("div");
+    lockup.className = "break-lockup";
+    lockup.innerHTML = '<i aria-hidden="true"></i><span class="wm">WOMBAT <span class="yr">2026</span></span>';
+    s.prepend(lockup);
+    const b = { s, until: s.dataset.until, minutes: parseFloat(s.dataset.minutes), end: null, el: null };
+    if (b.until || b.minutes > 0) {
+      b.el = document.createElement("div");
+      b.el.className = "countdown";
+      b.el.setAttribute("role", "timer");
+      const h = s.querySelector("h2");
+      h ? h.after(b.el) : s.append(b.el);
+    }
+    if (b.until) {
+      const [h, m] = b.until.split(":").map(Number);
+      b.end = new Date().setHours(h, m || 0, 0, 0);
+    }
+    return b;
+  }).filter(b => b.el);
+  function fmt(ms) {
+    const t = Math.ceil(ms / 1000), h = Math.floor(t / 3600), m = Math.floor(t / 60) % 60, s = String(t % 60).padStart(2, "0");
+    return h ? h + ":" + String(m).padStart(2, "0") + ":" + s : m + ":" + s;
+  }
+  function tick() {
+    for (const b of breaks) {
+      if (b.end === null && b.s.classList.contains("present")) b.end = Date.now() + b.minutes * 60000;
+      const left = b.end === null ? b.minutes * 60000 : b.end - Date.now();
+      b.el.classList.toggle("done", left <= 0);
+      const text = left > 0 ? fmt(left) : "Starting now";
+      if (b.el.textContent !== text) b.el.textContent = text;
+    }
+  }
+  if (breaks.length) { tick(); setInterval(tick, 250); }
+})();
+</script>

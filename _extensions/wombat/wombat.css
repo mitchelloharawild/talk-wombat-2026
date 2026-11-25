@@ -1,0 +1,206 @@
+/* WOMBAT 2026 slides. Structure and slide styles; Sass variables are in wombat.scss.
+   Slides are 1600 x 900. Backgrounds are drawn on reveal's .slide-background, which
+   carries the slide's classes, so they bleed to the edge of any screen. */
+@font-face { font-family: "Cabin"; font-weight: 600; src: url(fonts/Cabin-SemiBold.woff2) format("woff2"); }
+@font-face { font-family: "Cabin"; font-weight: 700; src: url(fonts/Cabin-Bold.woff2) format("woff2"); }
+@font-face { font-family: "PT Sans"; font-weight: 400; src: url(fonts/PTSans-Regular.woff2) format("woff2"); }
+@font-face { font-family: "PT Sans"; font-weight: 700; src: url(fonts/PTSans-Bold.woff2) format("woff2"); }
+@font-face { font-family: "PT Sans"; font-weight: 400; font-style: italic; src: url(fonts/PTSans-Italic.woff2) format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 400; src: url(fonts/JetBrainsMono-Regular.woff2) format("woff2"); }
+@font-face { font-family: "JetBrains Mono"; font-weight: 700; src: url(fonts/JetBrainsMono-Bold.woff2) format("woff2"); }
+:root {
+  --navy: #2b3590; --orange: #fbac27; --lavender: #c3c9f2; --grey: #4a4a4a;
+  --display: "Cabin", "Trebuchet MS", system-ui, sans-serif;
+  --px: 100px;
+  --hexclip: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+  --hexlines: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='52' height='90' viewBox='0 0 17.32 30'%3E%3Cpath d='M0 5 L8.66 0 L17.32 5 L17.32 15 L8.66 20 L0 15 Z M8.66 20 V30' fill='none' stroke='%23c3c9f2' stroke-width='.35'/%3E%3C/svg%3E");
+}
+
+/* ---------- frame ---------- */
+.reveal .slides > section, .reveal .slides > section > section { box-sizing: border-box; }
+.reveal .slides section.slide { box-sizing: border-box; height: 100%; padding: 76px var(--px) 110px; }
+.reveal .slides > section.stack { padding: 0; height: 100%; }
+.reveal .slides section.slide > h2 { margin: 0 0 .7em; text-wrap: balance; }
+.reveal h1, .reveal h2, .reveal h3 { letter-spacing: -.01em; }
+.reveal .slides section h3 { margin: .9em 0 .35em; }
+.reveal .slides section h3:first-child { margin-top: 0; }
+.reveal p { margin: 0 0 .7em; }
+.reveal ul, .reveal ol { margin: 0 0 .7em 1em; }
+.reveal li { margin-bottom: .35em; padding-left: .15em; }
+.reveal ul > li::marker { color: var(--orange); }
+.reveal ol > li::marker { color: var(--navy); font-family: var(--display); font-weight: 700; }
+.reveal .slides a { text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: .08em; text-underline-offset: .15em; }
+.reveal .columns { display: flex; gap: 60px; }
+.reveal .columns > .column { min-width: 0; flex: 1 1 auto; }
+.reveal section[data-kicker]:not(.title-slide)::before, .reveal section.title-slide[data-kicker]::before { content: attr(data-kicker); display: block; }
+.reveal .kick, .reveal section[data-kicker]::before { font-family: var(--display); font-weight: 700; font-size: 25px; line-height: 1.2; text-transform: uppercase; letter-spacing: .12em; margin: 0 0 14px; color: inherit; }
+.reveal .wm { font-family: var(--display); font-weight: 700; letter-spacing: -.01em; line-height: 1; color: var(--navy); white-space: nowrap; }
+.reveal .yr { color: var(--orange); }
+.reveal .muted { color: var(--grey); }
+.reveal .tag { display: inline-block; font-family: var(--display); font-weight: 700; font-size: .62em; letter-spacing: .06em; text-transform: uppercase; border: 4px solid var(--orange); border-radius: 99px; padding: .12em .75em; vertical-align: .18em; }
+
+/* ---------- footer: the sign footer, thin orange rule ---------- */
+.reveal .footer { --s: var(--slide-scale, 1); position: fixed; left: calc(var(--px) * var(--s)); right: calc(var(--px) * var(--s)); bottom: calc(26px * var(--s)); width: auto !important; margin: 0 !important; padding: calc(13px * var(--s)) 0 0; border-top: calc(3px * var(--s)) solid var(--orange); text-align: left !important; font-size: calc(20px * var(--s)) !important; line-height: 1.3; color: var(--grey); z-index: 5; display: block; }
+.reveal .footer p { margin: 0; font-size: inherit !important; }
+.reveal .footer .wm { font-size: 1.15em; padding-left: 1.75em; margin-right: .9em; background: url(img/wombat.svg) left center / 1.45em auto no-repeat; }
+.reveal .footer a { color: inherit !important; text-decoration: none; }
+.reveal .slide-number, .reveal .slide-number a { color: var(--grey) !important; font-family: var(--display) !important; font-weight: 600; background: none; }
+.reveal .slide-number { --s: var(--slide-scale, 1); position: fixed; right: calc(var(--px) * var(--s)) !important; bottom: calc(27px * var(--s)) !important; font-size: calc(20px * var(--s)) !important; padding: 0; line-height: 1.3; z-index: 6; }
+/* styles that carry their own footer, or none */
+.reveal:has(section.present:is(.wombat-title, .image-full, .break, .no-footer)) > :is(.footer, .slide-number) { display: none !important; }
+.reveal:has(section.present:is(.night, .title-slide:not(.light))) > :is(.footer, .slide-number), .reveal:has(section.present:is(.night, .title-slide:not(.light))) > .footer :is(.wm, p, a), .reveal:has(section.present:is(.night, .title-slide:not(.light))) > .slide-number a { color: var(--lavender) !important; }
+.reveal:has(section.present:is(.night, .title-slide:not(.light))) > .footer .wm { color: #fff !important; }
+
+/* ---------- backgrounds ---------- */
+.reveal .slide-background.slide::before, .reveal .slide-background.slide::after { content: ""; position: absolute; pointer-events: none; }
+/* default and .light titles: hex linework, top right */
+.reveal .slide-background.slide::before { top: 0; right: 0; width: 34vw; height: 25vw; background: var(--hexlines) right top; -webkit-mask-image: radial-gradient(circle at 100% 0, #000 15%, transparent 70%); mask-image: radial-gradient(circle at 100% 0, #000 15%, transparent 70%); }
+.reveal .slide-background.light::before { width: 46vw; height: 34vw; }
+.reveal .slide-background.light::after { bottom: 0; left: 0; width: 34vw; height: 24vw; background: var(--hexlines) left bottom; -webkit-mask-image: radial-gradient(circle at 0 100%, #000 15%, transparent 68%); mask-image: radial-gradient(circle at 0 100%, #000 15%, transparent 68%); }
+.reveal .slide-background:is(.plain, .break, .image-full)::before { display: none; }
+.reveal .slide-background.break { background-color: #fff; }
+.reveal .slide-background.break::after { left: 0; right: 0; bottom: 0; height: 27%; background: url(img/wave.svg) bottom / 100% 100% no-repeat; }
+.reveal .slide-background:is(.night, .title-slide:not(.light)) { background-color: #222b76; }
+.reveal .slide-background:is(.night, .title-slide:not(.light))::before { display: block; inset: 0; width: 100%; height: 100%; background: url(img/night.svg) center / cover; -webkit-mask-image: none; mask-image: none; }
+
+/* text on navy */
+.reveal section.slide:is(.night, .title-slide:not(.light)), .reveal section.slide:is(.night, .title-slide:not(.light)) :is(h1, h2, h3, h4, strong, .wm, dt) { color: #fff; }
+.reveal section.slide:is(.night, .title-slide:not(.light)) .yr { color: var(--orange); }
+.reveal section.slide:is(.night, .title-slide:not(.light)) :is(.kick, li::marker), .reveal section.slide:is(.night, .title-slide:not(.light))[data-kicker]::before { color: var(--orange); }
+.reveal section.slide:is(.night, .title-slide:not(.light)) :is(.muted, .org, .subtitle) { color: var(--lavender); }
+.reveal section.slide.night a { color: #fff; }
+.reveal section.night :not(pre) > code { color: #fff; background: #3a45a5; }
+
+/* layouts that place their content: flex columns over the full slide */
+.reveal .slides section.slide:is(.wombat-title, .title-slide, .break, .image-full):not([style*="display: none"]) { display: flex !important; flex-direction: column; justify-content: center; }
+
+/* ---------- title slide ---------- */
+.reveal .slides section.wombat-title { padding: 66px var(--px) 60px; text-align: left; }
+.reveal section.wombat-title .lockup { display: flex; align-items: center; gap: 26px; }
+.reveal .hexlogo { flex: none; width: 112px; aspect-ratio: 1650 / 1905; background: url(img/logo.svg) center / contain no-repeat; }
+.reveal section.wombat-title .lockup .wm { font-size: 74px; margin: 0; }
+.reveal section.wombat-title .org { font-size: 22px; margin: 8px 0 0; color: var(--grey); }
+.reveal section.wombat-title .title-main { flex: 1; display: flex; flex-direction: column; justify-content: center; max-width: 1300px; }
+.reveal section.wombat-title .kick { font-size: 28px; }
+.reveal section.wombat-title h1.title { font-size: 100px; line-height: 1.04; margin: 0; text-wrap: balance; }
+.reveal section.wombat-title .subtitle { font-size: 40px; margin: 22px 0 0; color: var(--grey); line-height: 1.25; }
+.reveal section.wombat-title .title-foot { display: flex; justify-content: space-between; align-items: flex-end; gap: 60px; border-top: 4px solid var(--orange); padding-top: 22px; }
+.reveal section.wombat-title .people { display: flex; flex-wrap: wrap; gap: 8px 56px; }
+.reveal section.wombat-title .person { margin: 0; font-size: 34px; line-height: 1.25; }
+.reveal section.wombat-title .person span { display: block; font-size: 24px; color: var(--grey); }
+.reveal section.wombat-title .date { margin: 0; font-size: 26px; white-space: nowrap; }
+.reveal section.wombat-title.has-photo .title-main { max-width: 850px; }
+.reveal section.wombat-title.has-photo h1.title { font-size: 82px; }
+.reveal section.wombat-title.night .title-foot { border-color: rgba(195,201,242,.45); border-width: 2px; }
+.reveal section.wombat-title.night .person span { color: var(--lavender); }
+/* hex portrait, from the social cards */
+.reveal .hexphoto { width: 480px; aspect-ratio: .866; background: var(--orange); clip-path: var(--hexclip); position: relative; flex: none; }
+.reveal .hexphoto p { margin: 0; }
+.reveal .hexphoto img { position: absolute; inset: 9px; width: calc(100% - 18px) !important; height: calc(100% - 18px) !important; max-width: none; max-height: none; margin: 0; object-fit: cover; object-position: 50% 35%; clip-path: var(--hexclip); }
+.reveal section.wombat-title .hexphoto { position: absolute; right: 120px; top: 120px; }
+
+/* ---------- section dividers (level 1 headings) ---------- */
+.reveal .slides section.title-slide:not(.wombat-title) { text-align: left; }
+.reveal .slides section.title-slide:not(.wombat-title) h1 { font-size: 120px; line-height: 1; margin: 0; max-width: 1250px; text-wrap: balance; }
+.reveal .slides section.title-slide p { font-size: 40px; margin: 24px 0 0; }
+.reveal section.title-slide.night p, .reveal section.title-slide:not(.light) p { color: var(--lavender); }
+/* ---------- content styles ---------- */
+/* hexes: a list as outlined hexagons, for three or four short points */
+.reveal .hexes > ul { display: flex; justify-content: center; gap: 46px; list-style: none; margin: 10px 0 0; padding: 0; }
+.reveal .hexes > ul > li { position: relative; width: 430px; max-width: 32%; aspect-ratio: .866; margin: 0; padding: 0 44px; box-sizing: border-box; display: flex; flex-direction: column; justify-content: center; text-align: center; font-size: 29px; line-height: 1.3; background: var(--orange); clip-path: var(--hexclip); isolation: isolate; }
+.reveal .hexes > ul > li::before { content: ""; position: absolute; inset: 7px; background: #fff; clip-path: var(--hexclip); z-index: -1; }
+.reveal .hexes > ul > li p { margin: 0; }
+.reveal .hexes > ul > li strong { display: block; font-family: var(--display); font-size: 42px; line-height: 1.1; margin-bottom: 12px; }
+.reveal .hexes > ul > li br:first-of-type { display: none; }
+.reveal section.night .hexes > ul > li::before { background: #222b76; }
+/* side images with a hexagon edge */
+.reveal .slides section img.image-right, .reveal .slides section img.image-left { position: absolute; top: 0; width: 36% !important; height: 100% !important; max-width: none; max-height: none; margin: 0; object-fit: cover; z-index: 1; }
+.reveal .slides section img.image-right { right: 0; clip-path: polygon(16% 0, 100% 0, 100% 100%, 16% 100%, 0 50%); }
+.reveal .slides section img.image-left { left: 0; clip-path: polygon(0 0, 84% 0, 100% 50%, 84% 100%, 0 100%); }
+.reveal:has(section.slide.present img.image-right) > .footer { right: calc(1600px * .4 * var(--s)); }
+.reveal:has(section.slide.present img.image-left) > .footer { left: calc(1600px * .4 * var(--s)); }
+.reveal:has(section.slide.present img.image-right) > .slide-number { right: calc(1600px * .4 * var(--s)) !important; }
+/* full image: ## Title {.image-full background-image="..."} */
+.reveal .slides section.slide.image-full { justify-content: flex-end !important; padding: 0 var(--px) 80px; }
+.reveal .slide-background.image-full::after { inset: 0; background: linear-gradient(to top, rgba(24,30,88,.92), rgba(24,30,88,.45) 34%, transparent 62%); }
+.reveal .slides section.image-full, .reveal .slides section.image-full > h2 { color: #fff; }
+.reveal .slides section.image-full > h2 { font-size: 88px; margin: 0; }
+.reveal .slides section.image-full > p { font-size: 36px; margin: 14px 0 0; }
+/* ---------- talk introduction ----------
+   ## Title {.talk .night kicker="Talk · 10:30 am"}: abstract, then a .presenters div
+   holding one .presenter div (photo, ### name, bio) per speaker */
+.reveal .slides section.slide.talk { padding: 64px var(--px) 106px; }
+.reveal .slides section.talk:not([style*="display: none"]) { display: grid !important; grid-template-columns: minmax(0, 1fr) 440px; column-gap: 90px; grid-auto-rows: min-content; align-content: center; }
+.reveal .slides section.talk::before, .reveal .slides section.talk > * { grid-column: 1; }
+.reveal .slides section.talk > h2 { font-size: 68px; line-height: 1.06; margin: 0 0 30px; }
+.reveal .slides section.talk > p { font-size: 35px; line-height: 1.4; margin: 0 0 .6em; text-wrap: pretty; }
+.reveal .slides section.talk > .presenters { grid-column: 2; grid-row: 1 / span 12; align-self: center; display: flex; flex-direction: column; gap: 34px; }
+.reveal .presenter { text-align: center; font-size: 27px; line-height: 1.36; }
+.reveal .presenter p { margin: 0; text-wrap: pretty; }
+.reveal .slides .presenter h3 { font-size: 40px; line-height: 1.1; margin: 20px 0 8px; }
+.reveal .presenter > p:has(img), .reveal .presenter > figure { position: relative; width: 390px; aspect-ratio: .866; margin: 0 auto; background: var(--orange); clip-path: var(--hexclip); }
+.reveal .slides .presenter img { position: absolute; inset: 8px; width: calc(100% - 16px) !important; height: calc(100% - 16px) !important; max-width: none; max-height: none; margin: 0; object-fit: cover; object-position: 50% 35%; clip-path: var(--hexclip); }
+/* two or more presenters: photo beside name and bio */
+.reveal .slides section.talk:has(.presenter ~ .presenter):not([style*="display: none"]) { grid-template-columns: minmax(0, 1fr) 560px; column-gap: 70px; }
+.reveal .slides section.talk:has(.presenter ~ .presenter) > h2 { font-size: 58px; }
+.reveal .presenters:has(.presenter ~ .presenter) .presenter { display: grid; grid-template-columns: 180px 1fr; grid-template-rows: 1fr auto auto 1fr; column-gap: 28px; text-align: left; font-size: 26px; }
+.reveal .presenters:has(.presenter ~ .presenter) .presenter > p:has(img) { grid-row: 1 / -1; width: 180px; align-self: center; }
+.reveal .slides .presenters:has(.presenter ~ .presenter) h3 { grid-column: 2; grid-row: 2; font-size: 34px; margin: 0 0 4px; }
+.reveal .presenters:has(.presenter ~ .presenter) .presenter > p:not(:has(img)) { grid-column: 2; grid-row: 3; }
+.reveal section.night .presenter p { color: var(--lavender); }
+
+/* ---------- break: ## Morning tea {.break until="10:30"} or {.break minutes=15} ---------- */
+.reveal .slides section.slide.break { text-align: center; align-items: center; padding: 60px var(--px) 190px; }
+.reveal .break-lockup { display: flex; align-items: flex-end; gap: 30px; margin-bottom: 52px; }
+.reveal .break-lockup i { width: 210px; aspect-ratio: 885 / 630; background: url(img/wombat.svg) center / contain no-repeat; }
+.reveal .break-lockup .wm { font-size: 132px; }
+.reveal .slides section.break > h2 { font-size: 72px; margin: 0; }
+.reveal .slides section.break > .countdown { font-family: var(--display); font-weight: 700; font-size: 210px; line-height: 1.08; letter-spacing: -.02em; font-variant-numeric: lining-nums tabular-nums; }
+.reveal .slides section.break > .countdown.done { font-size: 120px; line-height: 1.6; }
+.reveal .slides section.break > p { font-size: 38px; margin: 6px 0 0; color: var(--grey); }
+
+/* ---------- components ---------- */
+.reveal pre, .reveal div.sourceCode { border-radius: 10px; }
+.reveal pre code { padding: 24px 28px !important; }
+.reveal div.sourceCode { border: 3px solid var(--lavender) !important; box-shadow: none; margin: 0 0 24px; width: 100%; }
+.reveal .slides table { font-size: 30px; width: 100%; border-collapse: collapse; margin: 0; }
+.reveal .slides table caption { font-size: 26px; color: var(--grey); text-align: left; }
+.reveal .slides table th { font-family: var(--display); border-bottom: 4px solid var(--orange); padding: 12px 18px 12px 0; }
+.reveal .slides table td { border-bottom: 2px solid var(--lavender); padding: 12px 18px 12px 0; font-variant-numeric: tabular-nums; }
+.reveal .slides table tbody tr:last-child > * { border-bottom: 2px solid var(--lavender); }
+/* callouts: a ruled panel with a coloured dot, like the badge sticker legend */
+.reveal .callout.callout { --dot: #1e88e5; border: 3px solid var(--lavender) !important; border-radius: 10px; background: #fff; box-shadow: none; margin: 0 0 24px; padding: 22px 28px; font-size: 1em; color: #000; }
+.reveal .callout.callout-tip { --dot: #43a047; } .reveal .callout.callout-important { --dot: #e53935; } .reveal .callout:is(.callout-warning, .callout-caution) { --dot: var(--orange); }
+.reveal .callout.callout .callout-body { font-size: 30px !important; padding: 0; border: 0; }
+.reveal .callout.callout .callout-title { display: flex; align-items: center; gap: 16px; background: none !important; opacity: 1; padding: 0; margin: 0; border: 0; }
+.reveal .callout.callout .callout-title p { font-family: var(--display); font-weight: 700; font-size: 34px !important; line-height: 1.2; margin: 0; color: #000; }
+.reveal .callout.callout .callout-icon-container { display: none; }
+.reveal .callout.callout .callout-title::before { content: ""; flex: none; width: 26px; height: 26px; border-radius: 50%; background: var(--dot); }
+.reveal .callout.callout .callout-content { padding: 8px 0 0 42px; margin: 0; border: 0; }
+.reveal .callout.callout .callout-content > :last-child { margin-bottom: 0; }
+.reveal .slides section:is(.night) .callout :is(strong) { color: #000; }
+.reveal .aside, .reveal aside { color: var(--grey); }
+.reveal .slides section .aside, .reveal .slides section aside:not(.notes) { font-size: 22px; bottom: 100px; left: var(--px); }
+
+.reveal :is(ul, ol) { display: block; }
+.reveal code { font-variant-ligatures: none; }
+.reveal .slide-menu-button { display: none; }
+.reveal .callout.callout .callout-title p { margin: 0 !important; }
+.reveal .callout.callout :is(.callout-body, .callout-content) { margin: 0 !important; }
+.reveal .callout.callout .callout-content > p { margin: 0 0 .3em !important; }
+.reveal .slides section.wombat-title :is(h1, p) { text-align: left; }
+/* a heading next to a left image moves clear of it */
+.reveal .slides section.slide:has(img.image-left) > h2 { margin-left: 41%; }
+
+.reveal .slides section.slide:is(.night, .title-slide:not(.light)) a { color: #fff; }
+.reveal .wombat-title .title-foot:not(:has(p)) { border-color: transparent; }
+.reveal .slides section.night.wombat-title .title-foot:not(:has(p)) { border-color: transparent; }
+
+/* ---------- PDF export (?print-pdf): undo reveal's print resets ---------- */
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide { top: 0 !important; left: 0 !important; width: 1600px !important; height: 900px !important; min-height: 0 !important; box-sizing: border-box !important; z-index: 2; }
+html:is(.reveal-print, .print-pdf) .reveal .slides .pdf-page { overflow: hidden; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide { padding: 76px 100px 110px !important; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.wombat-title { padding: 66px 100px 60px !important; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.image-full { padding: 0 100px 80px !important; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.talk { padding: 64px 100px 106px !important; }
+html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.break { padding: 60px 100px 190px !important; }
