@@ -317,7 +317,7 @@ Keynote: Nicola Rennie
 ![](img/opening/2025-4679.jpg){.nostretch alt="Social time"}
 :::
 
-## 2026 {.past-event .night .no-footer}
+## 2026 {.past-event .night .no-footer kicker="Timely Insights, Models, & Exploration"}
 
 [![](img/opening/site-2026.jpg){.nostretch alt="WOMBAT 2026 website"}](https://wombat.numbat.space)
 
