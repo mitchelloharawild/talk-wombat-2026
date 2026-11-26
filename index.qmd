@@ -98,34 +98,16 @@ Response team:
 * Photos are taken throughout the day
 :::
 
-::: {.fragment .fade-up fragment-index=2}
-::: {.callout-note}
-## Rather not be photographed?
-* Wear a red dot on your badge
-* Unwanted photography or recording\
-breaches the code of conduct
-:::
-:::
-
 :::
 ::: {.column width="50%"}
 
-::: {.fragment .fade-up fragment-index=1}
+::: {.fragment .fade-up}
 ::: {.callout-tip}
 ## Share the day
 * Post with `#WOMBAT2026`
 * Follow us on Bluesky\
 [\@wombat.numbat.space](https://bsky.app/profile/wombat.numbat.space)
 * Tag the speakers you enjoyed
-:::
-:::
-
-::: {.fragment .fade-up fragment-index=3}
-::: {.callout-warning}
-## Before you post
-* Check photos for red dots
-* Ask before posting close-ups
-* Describe images with alt text
 :::
 :::
 

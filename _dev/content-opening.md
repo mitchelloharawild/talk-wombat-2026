@@ -23,7 +23,7 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 1 | Acknowledgement of Country | 2026 wording, both flags | `.country` | 1 |
 | 2 | Welcome | What WOMBAT is, who is in the room | `image-right`, 2025 crowd | 1 |
 | 3 | Safety and help | evacuation, code of conduct, who to ask | callouts | 1.5 |
-| 4a | Recording and social media | filming, opting out, hashtag, Bluesky, posting etiquette | callouts | 0.5 |
+| 4a | Recording and social media | filming, hashtag, Bluesky | callouts | 0.5 |
 | 4b | Badge stickers | badge illustration and sticker legend | two columns | 0.5 |
 | 5 | Online | website, live program, Wi-Fi | callouts | 0.5 |
 | 6 | Organising committee | six people, photos and roles | person cards (new, small CSS) | 0.5 |
