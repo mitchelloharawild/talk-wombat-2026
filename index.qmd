@@ -646,7 +646,7 @@ Krisanat Anukarnsakulchularp
 ::: columns
 ::: {.column width="50%"}
 
-::: {.callout-warning}
+::: {.callout-tip}
 ## Speakers
 
 - 21 presenters & instructors
@@ -655,7 +655,7 @@ Krisanat Anukarnsakulchularp
 :::
 
 ::: {.fragment .fade-up}
-::: {.callout-important}
+::: {.callout-warning}
 ## Attendees
 
 - **Number** attendees over 2 days
@@ -666,7 +666,7 @@ Krisanat Anukarnsakulchularp
 ::: {.column width="50%"}
 
 ::: {.fragment .fade-up}
-::: {.callout-note}
+::: {.callout-important}
 ## Committee
 
 - 6 organising committee members
@@ -675,7 +675,7 @@ Krisanat Anukarnsakulchularp
 :::
 
 ::: {.fragment .fade-up}
-::: {.callout-tip}
+::: {.callout-note}
 ## Monash
 
 - George and Di from the EBS department
