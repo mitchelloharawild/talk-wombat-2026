@@ -43,58 +43,6 @@ Monash Business Analytics Team
 
 ![](img/opening/2025-4492.jpg){.image-right .nostretch alt="Attendees at WOMBAT 2025"}
 
-## Organising committee
-
-::::::: {.committee}
-::: {.presenter}
-![](img/committee/mitchell-ohara-wild.jpg){.nostretch alt="Mitchell O'Hara-Wild"}
-
-### Mitchell<br>O'Hara-Wild
-
-General chair
-:::
-
-::: {.presenter}
-![](img/committee/krisanat-anukarnsakulchularp.jpg){.nostretch alt="Krisanat Anukarnsakulchularp"}
-
-### Krisanat<br>Anukarnsakulchularp
-
-Program chair
-:::
-
-::: {.presenter}
-![](img/committee/maliny-po.jpg){.nostretch alt="Maliny Po"}
-
-### Maliny<br>Po
-
-Visitor logistics
-:::
-
-::: {.presenter}
-![](img/committee/janith-wanniarachchi.jpg){.nostretch alt="Janith Wanniarachchi"}
-
-### Janith<br>Wanniarachchi
-
-Webmaster & AV lead
-:::
-
-::: {.presenter}
-![](img/committee/elio-campitelli.jpg){.nostretch alt="Elio Campitelli"}
-
-### Elio<br>Campitelli
-
-Social media
-:::
-
-::: {.presenter}
-![](img/committee/tina-rashid-jafari.jpg){.nostretch alt="Tina Rashid Jafari"}
-
-### Tina<br>Rashid Jafari
-
-Volunteer lead
-:::
-:::::::
-
 ## Safety and help
 
 ::: columns
@@ -260,6 +208,58 @@ All welcome
 
 :::
 :::
+
+## Organising committee
+
+::::::: {.committee}
+::: {.presenter}
+![](img/committee/mitchell-ohara-wild.jpg){.nostretch alt="Mitchell O'Hara-Wild"}
+
+### Mitchell<br>O'Hara-Wild
+
+General chair
+:::
+
+::: {.presenter}
+![](img/committee/krisanat-anukarnsakulchularp.jpg){.nostretch alt="Krisanat Anukarnsakulchularp"}
+
+### Krisanat<br>Anukarnsakulchularp
+
+Program chair
+:::
+
+::: {.presenter}
+![](img/committee/maliny-po.jpg){.nostretch alt="Maliny Po"}
+
+### Maliny<br>Po
+
+Visitor logistics
+:::
+
+::: {.presenter}
+![](img/committee/janith-wanniarachchi.jpg){.nostretch alt="Janith Wanniarachchi"}
+
+### Janith<br>Wanniarachchi
+
+Webmaster & AV lead
+:::
+
+::: {.presenter}
+![](img/committee/elio-campitelli.jpg){.nostretch alt="Elio Campitelli"}
+
+### Elio<br>Campitelli
+
+Social media
+:::
+
+::: {.presenter}
+![](img/committee/tina-rashid-jafari.jpg){.nostretch alt="Tina Rashid Jafari"}
+
+### Tina<br>Rashid Jafari
+
+Volunteer lead
+:::
+:::::::
 
 ## Live program {.live}
 

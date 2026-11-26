@@ -22,11 +22,11 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 0 | Title (holding) | Welcome to WOMBAT 2026 | existing title slide | – |
 | 1 | Acknowledgement of Country | 2026 wording, both flags | `.country` | 1 |
 | 2 | Welcome | What WOMBAT is, who is in the room | `image-right`, 2025 crowd | 1 |
-| 3 | Organising committee | six people, photos and roles | person cards (new, small CSS) | 0.5 |
-| 4 | Safety and help | evacuation, code of conduct, who to ask | callouts | 1.5 |
-| 5a | Recording and social media | filming, opting out, hashtag, Bluesky, posting etiquette | callouts | 0.5 |
-| 5b | Badge stickers | badge illustration and sticker legend | two columns | 0.5 |
-| 6 | Online | website, live program, Wi-Fi | callouts | 0.5 |
+| 3 | Safety and help | evacuation, code of conduct, who to ask | callouts | 1.5 |
+| 4a | Recording and social media | filming, opting out, hashtag, Bluesky, posting etiquette | callouts | 0.5 |
+| 4b | Badge stickers | badge illustration and sticker legend | two columns | 0.5 |
+| 5 | Online | website, live program, Wi-Fi | callouts | 0.5 |
+| 6 | Organising committee | six people, photos and roles | person cards (new, small CSS) | 0.5 |
 | 7 | **Ten years of WOMBAT** | section divider, "2016 – 2026" | `#` divider | – |
 | 8 | Each WOMBAT in turn | website snapshot (year, theme, venue, keynote), then a few photos | `.past-event`, then photos |  |
 | 8a | 2016 photos | the room, then "Were you there?" | `.image-full`, stills `2250` and `2403` |  |
@@ -36,7 +36,7 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 14 | Today | the program | existing `## Today's program` | 1 |
 | → | Keynote | existing session slide | | |
 
-If short on time, cut photo slides first, then merge 3 into the closing thanks (2025 showed the committee up front).
+If short on time, cut photo slides first, then merge 6 into the closing thanks (2025 showed the committee up front).
 
 ### Alternatives considered
 
