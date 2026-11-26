@@ -95,6 +95,7 @@ Response team:
 ## Today is recorded
 * Talks are filmed, including questions
 * Recordings go on YouTube afterwards
+* Announced on LinkedIn and Bluesky
 * Photos are taken throughout the day
 :::
 
@@ -105,14 +106,28 @@ Response team:
 ::: {.callout-tip}
 ## Share the day
 * Post with `#WOMBAT2026`
-* Follow us on Bluesky\
-[\@wombat.numbat.space](https://bsky.app/profile/wombat.numbat.space)
 * Tag the speakers you enjoyed
 :::
 :::
 
 :::
 :::
+
+::::: {.follow .fragment .fade-up}
+::: {.account}
+[![](img/qr/bluesky.svg){.nostretch alt="QR code for WOMBAT on Bluesky"}](https://bsky.app/profile/wombat.numbat.space)
+
+**Follow on Bluesky**\
+[\@wombat.numbat.space](https://bsky.app/profile/wombat.numbat.space)
+:::
+
+::: {.account}
+[![](img/qr/linkedin.svg){.nostretch alt="QR code for WOMBAT on LinkedIn"}](https://www.linkedin.com/in/wombat-workshop-5ba30a378/)
+
+**Follow on LinkedIn**\
+[WOMBAT Workshop](https://www.linkedin.com/in/wombat-workshop-5ba30a378/)
+:::
+:::::
 
 ## Badge stickers {.badges}
 

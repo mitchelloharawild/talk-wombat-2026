@@ -23,7 +23,7 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 1 | Acknowledgement of Country | 2026 wording, both flags | `.country` | 1 |
 | 2 | Welcome | What WOMBAT is, who is in the room | `image-right`, 2025 crowd | 1 |
 | 3 | Safety and help | evacuation, code of conduct, who to ask | callouts | 1.5 |
-| 4a | Recording and social media | filming, hashtag, Bluesky | callouts | 0.5 |
+| 4a | Recording and social media | filming, hashtag, Bluesky and LinkedIn | callouts, QR codes | 0.5 |
 | 4b | Badge stickers | badge illustration and sticker legend | two columns | 0.5 |
 | 5 | Online | website, live program, Wi-Fi | callouts | 0.5 |
 | 6 | Organising committee | six people, photos and roles | person cards (new, small CSS) | 0.5 |
@@ -131,6 +131,8 @@ Changed for 2026:
 * Badge stickers: red dot = no photos, green = looking for work, blue = hiring, pronoun stickers. **In 2025 green marked organisers**, so do not reuse that line
 * Hashtag `#WOMBAT2026`
 * Bluesky: [@wombat.numbat.space](https://bsky.app/profile/wombat.numbat.space)
+* LinkedIn: [WOMBAT Workshop](https://www.linkedin.com/in/wombat-workshop-5ba30a378/)
+* Recordings will be announced on LinkedIn and Bluesky. QR codes for both are in `img/qr/`
 * Live program: <https://wombat.numbat.space/live.html>
 
 ## Decided

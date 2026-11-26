@@ -19,6 +19,12 @@
 
 .reveal .callout a[href^="mailto"] { white-space: nowrap; }
 
+/* recording: QR codes for the social accounts, below both columns */
+.reveal .follow { display: flex; justify-content: center; gap: 120px; margin-top: 24px; }
+.reveal .follow .account { display: grid; grid-template-columns: 240px max-content; align-items: center; column-gap: 28px; }
+.reveal .slides .follow p { margin: 0; font-size: 31px; }
+.reveal .slides .follow img { display: block; width: 240px; height: 240px; max-width: none; max-height: none; margin: 0; }
+
 /* badge stickers: matches the registration desk sign */
 .reveal .slides section.badges img.badge-illus { display: block; width: 680px; max-width: none; max-height: none; margin: 40px 0 0; }
 .reveal .sticker { position: relative; min-height: 96px; margin: 24px 0 72px; padding-left: 124px; }
