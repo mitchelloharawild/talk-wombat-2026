@@ -643,9 +643,48 @@ Krisanat Anukarnsakulchularp
 
 ## Thanks
 
-<!-- TODO: speakers, volunteers, organisers and sponsors -->
+::: columns
+::: {.column width="50%"}
 
-*To come*
+::: {.callout-warning}
+## Speakers
+
+- 21 presenters & instructors
+- 8 tutorials
+- 12 invited talks
+:::
+
+::: {.fragment .fade-up}
+::: {.callout-important}
+## Attendees
+
+- **Number** attendees over 2 days
+:::
+:::
+
+:::
+::: {.column width="50%"}
+
+::: {.fragment .fade-up}
+::: {.callout-note}
+## Committee
+
+- 6 organising committee members
+- 12 volunteers across 2 days
+:::
+:::
+
+::: {.fragment .fade-up}
+::: {.callout-tip}
+## Monash
+
+- George and Di from the EBS department
+- Addy Khaneja from the events team
+:::
+:::
+
+:::
+:::
 
 # Thank you
 
