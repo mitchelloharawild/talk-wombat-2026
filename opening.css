@@ -20,8 +20,8 @@
 .reveal .callout a[href^="mailto"] { white-space: nowrap; }
 
 /* badge stickers: matches the registration desk sign */
-.reveal .slides section.badges img.badge-illus { display: block; width: 530px; max-width: none; max-height: none; margin: 10px 0 0 18px; }
-.reveal .sticker { position: relative; min-height: 96px; margin-top: 38px; padding-left: 124px; }
+.reveal .slides section.badges img.badge-illus { display: block; width: 680px; max-width: none; max-height: none; margin: 40px 0 0; }
+.reveal .sticker { position: relative; min-height: 96px; margin: 24px 0 72px; padding-left: 124px; }
 .reveal .sticker::before { content: ""; position: absolute; left: 0; top: 0; width: 96px; height: 96px; border-radius: 50%; }
 .reveal .slides .sticker strong { font-family: var(--display); font-size: 44px; line-height: 1.15; color: #000; }
 .reveal .slides .sticker p { margin: 0; font-size: 31px; color: var(--grey); }

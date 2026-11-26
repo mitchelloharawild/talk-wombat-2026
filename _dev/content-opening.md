@@ -24,7 +24,8 @@ Housekeeping early, memory lane last: the energy builds into the keynote.
 | 2 | Welcome | What WOMBAT is, who is in the room | `image-right`, 2025 crowd | 1 |
 | 3 | Organising committee | six people, photos and roles | person cards (new, small CSS) | 0.5 |
 | 4 | Safety and help | evacuation, code of conduct, who to ask | callouts | 1.5 |
-| 5 | Badges and photos | sticker legend, recording, hashtag | callouts | 1 |
+| 5a | Recording and social media | filming, opting out, hashtag, Bluesky, posting etiquette | callouts | 0.5 |
+| 5b | Badge stickers | badge illustration and sticker legend | two columns | 0.5 |
 | 6 | Online | website, live program, Wi-Fi | callouts | 0.5 |
 | 7 | **Ten years of WOMBAT** | section divider, "2016 – 2026" | `#` divider | – |
 | 8 | Each WOMBAT in turn | website snapshot (year, theme, venue, keynote), then a few photos | `.past-event`, then photos |  |
@@ -129,6 +130,7 @@ Changed for 2026:
 * Committee: Mitchell O'Hara-Wild (general chair), Krisanat Anukarnsakulchularp (program chair), Maliny Po (visitor logistics), Janith Wanniarachchi (webmaster & AV lead), Elio Campitelli (social media), Tina Rashid Jafari (volunteers)
 * Badge stickers: red dot = no photos, green = looking for work, blue = hiring, pronoun stickers. **In 2025 green marked organisers**, so do not reuse that line
 * Hashtag `#WOMBAT2026`
+* Bluesky: [@wombat.numbat.space](https://bsky.app/profile/wombat.numbat.space)
 * Live program: <https://wombat.numbat.space/live.html>
 
 ## Decided

@@ -11,9 +11,13 @@ format:
 
 ## Acknowledgement of Country {.country .plain .no-footer background-color="#2a1712" background-image="img/opening/country.svg"}
 
-We acknowledge the Wurundjeri Woi Wurrung people of the Kulin Nations, Traditional Owners of the land on which we gather. Sovereignty was never ceded.
+We acknowledge the Wurundjeri Woi Wurrung people\
+of the Kulin Nations, Traditional Owners of the land\
+on which we gather. Sovereignty was never ceded.
 
-We pay our respects to Elders past and present, and welcome all Aboriginal and Torres Strait Islander people joining us here in Naarm (Melbourne).
+We pay our respects to Elders past and present,\
+and welcome all Aboriginal and Torres Strait Islander\
+people joining us here in Naarm (Melbourne).
 
 ::: {.flags}
 ![](img/opening/flag-aboriginal.svg){.nostretch alt="Australian Aboriginal flag"}
@@ -118,7 +122,8 @@ Ask an organiser, or email\
 ::: {.fragment .fade-up}
 ::: {.callout-note}
 ## Code of conduct
-Be kind, respectful and considerate. Full version on the website.
+Be kind, respectful and considerate.\
+Full version on the website.
 
 Response team:
 
@@ -133,45 +138,79 @@ Response team:
 :::
 :::
 
-## Photos, recording and badges {.badges}
+## Recording and social media
 
 ::: columns
-::: {.column width="47%"}
+::: {.column width="50%"}
 
-### Today is recorded
-
-* Talks are filmed
+::: {.callout-important}
+## Today is recorded
+* Talks are filmed, including questions
+* Recordings go on YouTube afterwards
 * Photos are taken throughout the day
-* Post yours with `#WOMBAT2026`
+:::
 
-::: {.fragment .fade-up fragment-index=1}
-![](img/badge-stickers.svg){.badge-illus fig-alt="Name badge with a space for a pronoun sticker at bottom left and for coloured dots at bottom right"}
+::: {.fragment .fade-up fragment-index=2}
+::: {.callout-note}
+## Rather not be photographed?
+* Wear a red dot on your badge
+* Unwanted photography or recording\
+breaches the code of conduct
+:::
 :::
 
 :::
-::: {.column width="53%"}
+::: {.column width="50%"}
 
 ::: {.fragment .fade-up fragment-index=1}
+::: {.callout-tip}
+## Share the day
+* Post with `#WOMBAT2026`
+* Follow us on Bluesky\
+[\@wombat.numbat.space](https://bsky.app/profile/wombat.numbat.space)
+* Tag the speakers you enjoyed
+:::
+:::
 
-### Badge stickers
+::: {.fragment .fade-up fragment-index=3}
+::: {.callout-warning}
+## Before you post
+* Check photos for red dots
+* Ask before posting close-ups
+* Describe images with alt text
+:::
+:::
+
+:::
+:::
+
+## Badge stickers {.badges}
+
+::: columns
+::: {.column width="50%"}
 
 Optional, from the registration desk
 
-:::
+![](img/badge-stickers.svg){.badge-illus .nostretch fig-alt="Name badge with a space for a pronoun sticker at bottom left and for coloured dots at bottom right"}
 
-::: {.sticker .red .fragment .fade-up fragment-index=2}
+:::
+::: {.column width="50%"}
+
+::: {.sticker .red .fragment .fade-up}
 **No photos, please**\
 Please don't take or share photos of me.
 :::
 
-::: {.sticker .green .fragment .fade-up fragment-index=3}
+::: {.sticker .green .fragment .fade-up}
 **Looking for work**\
-Open to job opportunities. Come say hello.
+Open to job opportunities.\
+Come say hello.
 :::
 
-::: {.sticker .blue .fragment .fade-up fragment-index=4}
+::: {.sticker .blue .fragment .fade-up}
 **Hiring**\
-My team is hiring. Ask me about it.
+My team is hiring.\
+Ask me about it.
 :::
 
 :::
@@ -214,7 +253,8 @@ What's on now and next, all day
 ::: {.fragment .fade-up}
 ::: {.callout-tip}
 ## Social event
-After the closing discussion, all welcome
+After the closing discussion\
+All welcome
 :::
 :::
 
@@ -316,7 +356,7 @@ Keynote: Michael Lawrence
 ![](img/opening/2024-elio.jpeg){.nostretch alt="Elio Campitelli presenting"}
 :::
 
-## 2025 {.past-event .night .no-footer kicker="Designing Data Driven Discoveries"}
+## 2025 {.past-event .night .no-footer kicker="Designing Data Driven Discoveries"}
 
 [![](img/opening/site-2025.jpg){.nostretch alt="WOMBAT 2025 website"}](https://wombat.numbat.space/2025)
 
