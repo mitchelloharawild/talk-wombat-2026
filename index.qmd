@@ -635,9 +635,33 @@ Krisanat Anukarnsakulchularp
 
 *To come*
 
-## Events and organisations
+## Communities
 
-<!-- TODO: other events and organisations in the local data analysis space -->
+![](img/communities/communities-board.png){.nostretch fig-align="center" width="50%" style="margin-top: -40px;" fig-alt="Hex Stickers Communites Boards"}
+
+## SSA SCV
+
+![](img/communities/ssa-scv.png){.hex-corner .nostretch fig-alt="SSA Statistical Computing and Visualisation hex sticker"}
+
+*To come*
+
+## rainbowR
+
+![](img/communities/rainbowR-hex.png){.hex-corner .nostretch fig-alt="rainbowR hex sticker"}
+
+*To come*
+
+## R Ladies+ Melbourne
+
+![](img/communities/r-ladies.png){.hex-corner .nostretch fig-alt="R-Ladies+ Melbourne hex sticker"}
+
+*To come*
+
+## MBAt
+
+*To come*
+
+## EBS ORA Hub
 
 *To come*
 

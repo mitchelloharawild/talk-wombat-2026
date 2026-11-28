@@ -86,3 +86,6 @@
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.photo-slide { padding: 40px 50px !important; }
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.live { padding: 40px 100px 110px !important; }
 html:is(.reveal-print, .print-pdf) .reveal.reveal .slides section.slide.theme-hero { padding: 66px 100px !important; }
+
+/* communities: hex sticker pinned to the top right of the slide */
+.reveal .slides img.hex-corner { position: absolute; top: 50px; right: 70px; width: 280px; height: auto; max-width: none; max-height: none; margin: 0; }
